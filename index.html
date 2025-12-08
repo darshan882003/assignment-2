@@ -1,11 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Layout Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      min-height: 840px;
+      width: 100%;
+    }
+    .bg-image {
+      background-image: url('https://static.wixstatic.com/media/c837a6_02de7d4c43d44b7b890854049ed75da8f000.jpg/v1/fill/w_1336,h_840,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c837a6_02de7d4c43d44b7b890854049ed75da8f000.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 840px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+    .bordered {
+      border: 1px solid #333;
+      padding: 10px;
+    }
+    /* Navigation styles */
+    .nav-row {
+      padding: 15px 30px;
+      transition: top 0.5s ease, background-color 0.5s ease;
+      position: fixed;
+      width: 100%;
+      top: -80px; /* hidden initially */
+      z-index: 999;
+    }
+    .nav-row.visible {
+      top: 0; /* slide down */
+      background-color: white; /* white background when visible */
+    }
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
+    .nav-list li {
+      display: inline-block;
+      margin-left: 15px;
+    }
+    .nav-list a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    .nav-list a:hover {
+      color: #555;
+    }
+    /* Centered content below nav */
+    .center-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .nav-row.transparent {
+  background-color: transparent !important;
+  box-shadow: none; /* optional: remove shadow when transparent */
+}
+
+  </style>
 </head>
 <body>
-    
+  <!-- Hero Section wrapper -->
+  <div class="hero-section">
+    <div class="bg-image">
+      <div class="container-fluid">
+        <!-- Navigation row -->
+        <div class="row nav-row bordered align-items-center" id="navbar">
+          <div class="col-sm-4 col-md-3">
+            <a href="#" class="fw-bold text-dark">CompanyName</a>
+          </div>
+          <div class="col-sm-8 col-md-9">
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Centered content block -->
+        <div class="row d-flex justify-content-center align-items-center text-black" style="min-height: 400px;">
+          <div class="col-sm-12 col-md-8 text-center">
+            <h1>Welcome to Our Website</h1>
+            <p>This is some dummy text to demonstrate the responsive layout. Resize the browser to see how the grid adapts at `sm` and `md` breakpoints.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+  <h1>hellow</h1>
+
+
+
+  <!-- Next container-fluid after hero section -->
+<div class="container-fluid my-5">
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="col-6 bordered">
+      <p>Left content for Row 1</p>
+    </div>
+    <div class="col-6 bordered">
+      <p>Right content for Row 1</p>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="row">
+    <div class="col-6 bordered">
+      <p>Left content for Row 2</p>
+    </div>
+    <div class="col-6 bordered">
+      <p>Right content for Row 2</p>
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="row">
+    <div class="col-6 bordered">
+      <p>Left content for Row 3</p>
+    </div>
+    <div class="col-6 bordered">
+      <p>Right content for Row 3</p>
+    </div>
+  </div>
+
+  <!-- Row 4 -->
+  <div class="row">
+    <div class="col-6 bordered">
+      <p>Left content for Row 4</p>
+    </div>
+    <div class="col-6 bordered">
+      <p>Right content for Row 4</p>
+    </div>
+  </div>
+
+  <!-- Row 5 -->
+  <div class="row">
+    <div class="col-6 bordered">
+      <p>Left content for Row 5</p>
+    </div>
+    <div class="col-6 bordered">
+      <p>Right content for Row 5</p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop < lastScrollTop) {
+        // scrolling up → show navbar
+        navbar.classList.add("visible");
+      } else {
+        // scrolling down → hide navbar
+        navbar.classList.remove("visible");
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // avoid negative
+    }, false);
+  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return; // guard if element not found
+
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // show/hide based on scroll direction
+      if (scrollTop < lastScrollTop) {
+        navbar.classList.add("visible");
+      } else {
+        navbar.classList.remove("visible");
+      }
+
+      // transparent when at very top
+      if (scrollTop === 0) {
+        navbar.classList.add("transparent");
+      } else {
+        navbar.classList.remove("transparent");
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }, { passive: true });
+  });
+</script>
+
+
 </body>
 </html>
