@@ -2,273 +2,269 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Autono Demo</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts: Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #000;
-        }
-
-        /* Hero section with video background */
-        .hero-section {
-            position: relative;
-            min-height: 840px;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .hero-section video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -2;
-        }
-
-        /* Navigation styles */
-        .nav-row {
-            padding: 15px 30px;
-            transition: top 0.5s ease, background-color 0.5s ease;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 999;
-        }
-
-        .nav-row.transparent {
-            background-color: transparent !important;
-            box-shadow: none;
-        }
-
-        .nav-row.scrolled {
-            background-color: white !important;
-        }
-
-        .nav-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            text-align: right;
-        }
-
-        .nav-list li {
-            display: inline-block;
-            margin-left: 15px;
-        }
-
-        .nav-list a {
-            text-decoration: none;
-            color: #000;
-            font-weight: 500;
-        }
-
-        .nav-list a:hover {
-            color: #555;
-        }
-
-        /* Centered hero content */
-        .hero-content {
-            position: relative;
-            min-height: 840px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            z-index: 1;
-            /* keep above shadow */
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            font-weight: 700;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-top: 1rem;
-        }
-
-        /* Bottom shadow overlay */
-        .bottom-shadow {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 200px;
-            /* taller for stronger fade */
-            pointer-events: none;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), transparent);
-            z-index: 0;
-            /* sits behind text but above video */
-        }
-
-
-
-        /* Dark section background and card styling */
-        .services-dark {
-            background-color: #0e0e0e;
-            /* dark background */
-        }
-
-        .service-box {
-            background-color: #1a1a1a;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .service-ambient {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 8px;
-        }
-
-        /* Numbers grid */
-        .numbers-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(140px, 1fr));
-            gap: 16px;
-            max-width: 420px;
-        }
-
-        .number-block {
-            background-color: #1a1a1a;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 8px;
-            padding: 16px;
-            text-align: center;
-        }
-
-        .number {
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .label {
-            font-size: 0.95rem;
-        }
-
-
-
-
-.footer-autono {
-  background-color: #fff; /* white background */
-  color: #000;            /* black text */
-}
-
-.footer-link {
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-}
-.footer-link:hover {
-  color: #555;
-}
-
-.footer-input {
-  border: 1px solid #ccc;
-  padding: 0.75rem;
-}
-
-.footer-icon {
-  color: #000;
-  font-size: 1.2rem;
-}
-.footer-icon:hover {
-  color: #555;
-}
-
-.footer-autono h5 {
-  font-size: 1.2rem;
-}
-.footer-autono p,
-.footer-autono li {
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-
-
-
-
-/* Parallax section background */
-.why-autono-section {
-  position: relative;
-  min-height: 600px;      /* adjust to match your page rhythm */
-  background-image: url('https://static.wixstatic.com/media/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg/v1/fill/w_1351,h_880,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* parallax effect */
-  display: flex;
-  align-items: center;
-  padding: 60px 0;        /* vertical spacing similar to the site */
-}
-
-/* Content box styling (white with subtle shadow) */
-.why-box {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 32px;          /* inner spacing to match the site’s feel */
-  border-radius: 8px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  max-width: 560px;       /* keeps the text measure similar to the site */
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autono Demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #000;
+    }
+
+    /* Hero section with video background */
+    .hero-section {
+      position: relative;
+      min-height: 840px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero-section video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    /* Navigation styles */
+    .nav-row {
+      padding: 15px 30px;
+      transition: top 0.5s ease, background-color 0.5s ease;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+
+    .nav-row.transparent {
+      background-color: transparent !important;
+      box-shadow: none;
+    }
+
+    .nav-row.scrolled {
+      background-color: white !important;
+    }
+
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
+
+    .nav-list li {
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    .nav-list a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .nav-list a:hover {
+      color: #555;
+    }
+
+    /* Centered hero content */
+    .hero-content {
+      position: relative;
+      min-height: 840px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+      /* keep above shadow */
+    }
+
+    .hero-content h1 {
+      font-size: 4rem !important;
+      font-weight: 100 !important;
+      line-height: 6rem !important;
+      font-family: "Montserrat",sans-serif !important;
+      letter-spacing: 2px;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem !important;
+      font-weight: 400 !important;
+      line-height: 2.7rem !important;
+      font-family: "Montserrat",sans-serif !important;
+      letter-spacing: 1px;
+    }
+
+    /* Bottom shadow overlay */
+    .bottom-shadow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      /* taller for stronger fade */
+      pointer-events: none;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), transparent);
+      z-index: 0;
+      /* sits behind text but above video */
+    }
+
+
+
+    /* Dark section background and card styling */
+    .services-dark {
+      background-color: #0e0e0e;
+      /* dark background */
+    }
+
+    .service-box {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .service-ambient {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+    }
+
+    /* Numbers grid */
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(140px, 1fr));
+      gap: 16px;
+      max-width: 420px;
+    }
+
+    .number-block {
+      background-color: #1a1a1a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .number {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .label {
+      font-size: 0.95rem;
+    }
+
+
+
+
+    .footer-autono {
+      background-color: #fff;
+      /* white background */
+      color: #000;
+      /* black text */
+    }
+
+    .footer-link {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-link:hover {
+      color: #555;
+    }
+
+    .footer-input {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+    }
+
+    .footer-icon {
+      color: #000;
+      font-size: 1.2rem;
+    }
+
+    .footer-icon:hover {
+      color: #555;
+    }
+
+    .footer-autono h5 {
+      font-size: 1.2rem;
+    }
+
+    .footer-autono p,
+    .footer-autono li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
 
-/* Typographic rhythm */
-.why-box h2 {
-  font-size: 2rem;
-  letter-spacing: 0.5px;
-}
-.why-box .lead {
-  font-size: 1.125rem;
-}
-.why-box p {
-  line-height: 1.6;
-}
 
-/* Responsive adjustments */
-@media (max-width: 767.98px) {
-  .why-autono-section {
-    background-attachment: scroll; /* better performance on mobile */
-    padding: 40px 0;
-  }
-  .why-box {
-    max-width: none;
-    padding: 24px;
-  }
-}
+
 
 
+    /* Parallax section background */
+    .why-autono-section {
+      position: relative;
+      min-height: 600px;
+      /* adjust to match your page rhythm */
+      background-image: url('https://static.wixstatic.com/media/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg/v1/fill/w_1351,h_880,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      /* parallax effect */
+      display: flex;
+      align-items: center;
+      padding: 60px 0;
+      /* vertical spacing similar to the site */
+    }
+
+    /* Content box styling (white with subtle shadow) */
+    .why-box {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 32px;
+      /* inner spacing to match the site’s feel */
+      border-radius: 8px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      max-width: 560px;
+      /* keeps the text measure similar to the site */
+    }
 
+    /* Typographic rhythm */
+    .why-box h2 {
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+    }
 
+    .why-box .lead {
+      font-size: 1.125rem;
+    }
 
+    .why-box p {
+      line-height: 1.6;
+    }
 
+    /* Responsive adjustments */
+    @media (max-width: 767.98px) {
+      .why-autono-section {
+        background-attachment: scroll;
+        /* better performance on mobile */
+        padding: 40px 0;
+      }
 
-.post-parallax-section {
-  background: #fff;
-  color: #000;
-}
-.post-parallax-section h3 {
-  font-size: 1.75rem;
-  letter-spacing: 0.2px;
-}
-.post-parallax-section p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-.post-parallax-section img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+      .why-box {
+        max-width: none;
+        padding: 24px;
+      }
+    }
 
 
 
@@ -276,546 +272,623 @@
 
 
 
+    .post-parallax-section {
+      background: #fff;
+      color: #000;
+    }
 
+    .post-parallax-section h3 {
+      font-size: 1.75rem;
+      letter-spacing: 0.2px;
+    }
 
-.autono-numbers {
-  background-color: #fff; /* white background */
-  color: #000;            /* black text */
-}
+    .post-parallax-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
 
-.autono-numbers h2 {
-  font-size: 1.5rem;
-  letter-spacing: 0.08em;
-}
+    .post-parallax-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-.stat-box {
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
-}
 
-.stat-value {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.5rem;
-}
 
-.stat-label {
-  font-size: 0.9rem;
-  letter-spacing: 0.16em;
-  color: #555;
-}
 
 
 
 
 
 
+    .autono-numbers {
+      background-color: #fff;
+      /* white background */
+      color: #000;
+      /* black text */
+    }
 
+    .autono-numbers h2 {
+      font-size: 1.5rem;
+      letter-spacing: 0.08em;
+    }
 
+    .stat-box {
+      border-top: 1px solid #ccc;
+      padding-top: 1rem;
+    }
 
-.industry-partners {
-  background-color: #fff; /* white background */
-  color: #000;            /* black text */
-}
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
 
-.industry-partners h6 {
-  font-size: 14px;
-}
+    .stat-label {
+      font-size: 0.9rem;
+      letter-spacing: 0.16em;
+      color: #555;
+    }
 
-.industry-partners h2 {
-  font-size: 24px;
-  line-height: 1.8em;
-}
 
-.industry-partners p {
-  line-height: 1.8em;
-}
 
-.industry-partners img {
-  display: block;
-  margin: 0 auto;
-}
 
 
 
 
 
 
-.careers-section {
-  background-color: #000; /* black background */
-  color: #fff;            /* white text */
-}
+    .industry-partners {
+      background-color: #fff;
+      /* white background */
+      color: #000;
+      /* black text */
+    }
 
-.careers-section h6 {
-  font-size: 14px;
-  letter-spacing: 0.16em;
-}
+    .industry-partners h6 {
+      font-size: 14px;
+    }
 
-.careers-section p {
-  line-height: 1.8em;
-}
+    .industry-partners h2 {
+      font-size: 24px;
+      line-height: 1.8em;
+    }
 
-.job-card {
-  background-color: #111; /* slightly lighter black for contrast */
-  border-radius: 8px;
-  color: #fff;
-}
-.job-card h5 {
-  font-size: 18px;
-}
-.job-card p {
-  font-size: 16px;
-}
+    .industry-partners p {
+      line-height: 1.8em;
+    }
 
+    .industry-partners img {
+      display: block;
+      margin: 0 auto;
+    }
 
 
 
-.careers-section {
-  background-color: #000; /* black background */
-  color: #fff;            /* white text */
-}
 
-.careers-section h6 {
-  font-size: 14px;
-  letter-spacing: 0.16em;
-}
 
-.careers-section p {
-  line-height: 1.8em;
-}
 
-.job-card {
-  background-color: #111; /* slightly lighter black for contrast */
-  border-radius: 8px;
-  color: #fff;
-}
-.job-card h5 {
-  font-size: 18px;
-}
-.job-card p {
-  font-size: 16px;
-}
+    .careers-section {
+      background-color: #000;
+      /* black background */
+      color: #fff;
+      /* white text */
+    }
 
+    .careers-section h6 {
+      font-size: 14px;
+      letter-spacing: 0.16em;
+    }
 
+    .careers-section p {
+      line-height: 1.8em;
+    }
 
-    </style>
+    .job-card {
+      background-color: #111;
+      /* slightly lighter black for contrast */
+      border-radius: 8px;
+      color: #fff;
+    }
+
+    .job-card h5 {
+      font-size: 18px;
+    }
+
+    .job-card p {
+      font-size: 16px;
+    }
+
+
+
+
+    .careers-section {
+      background-color: #000;
+      /* black background */
+      color: #fff;
+      /* white text */
+    }
+
+    .careers-section h6 {
+      font-size: 14px;
+      letter-spacing: 0.16em;
+    }
+
+    .careers-section p {
+      line-height: 1.8em;
+    }
+
+    .job-card {
+      background-color: #111;
+      /* slightly lighter black for contrast */
+      border-radius: 8px;
+      color: #fff;
+    }
+
+    .job-card h5 {
+      font-size: 18px;
+    }
+
+    .job-card p {
+      font-size: 16px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- HERO SECTION -->
-    <div class="hero-section">
-        <!-- Background video -->
-        <video autoplay muted loop playsinline>
-            <source src="https://video.wixstatic.com/video/c837a6_02de7d4c43d44b7b890854049ed75da8/1080p/mp4/file.mp4"
-                type="video/mp4">
-        </video>
+<!-- HERO SECTION -->
+<div class="hero-section position-relative min-vh-100 overflow-hidden">
+  <!-- Background video -->
+  <video autoplay muted loop playsinline class="position-absolute w-100 h-100" style="object-fit: cover; z-index:0;">
+    <source src="https://video.wixstatic.com/video/c837a6_02de7d4c43d44b7b890854049ed75da8/1080p/mp4/file.mp4" type="video/mp4">
+  </video>
+
+  <!-- Navigation -->
+  <div class="row nav-row transparent align-items-center px-md-5 py-md-4 position-relative" id="navbar" style="z-index:1;">
+    <div class="col-sm-4 col-md-3">
+      <a href="https://www.wix.com/demone2/autono" class="fw-bold text-white">AUTONO</a>
+    </div>
+    <div class="col-sm-8 col-md-9 d-flex justify-content-end">
+      <ul class="nav-list list-unstyled d-flex gap-3 mb-0">
+        <li><a href="https://www.wix.com/demone2/autono/technology" class="text-white">Technology</a></li>
+        <li><a href="https://www.wix.com/demone2/autono/about" class="text-white">About</a></li>
+        <li><a href="https://www.wix.com/demone2/autono/careers" class="text-white">Careers</a></li>
+        <li><a href="#" class="text-white">More</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero text -->
+  <div class="hero-content text-black position-relative d-flex flex-column justify-content-start" style="z-index:1; height:100%;">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-12 col-md-8 mx-auto text-center">
+          <h1 class="fw-bold text-black">THE FUTURE OF MOBILITY IS HERE</h1>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 col-md-8 mx-auto text-center">
+          <p class="fs-5 text-black">Discover the safest self-driving experience with Autono.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom overlay image (pushed slightly downward) -->
+  <img src="https://static.wixstatic.com/media/84770f_3ebbf7ac3e26427b83ca50c82aabaaf8~mv2.png/v1/fill/w_1351,h_450,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3ebbf7ac3e26427b83ca50c82aabaaf8~mv2.png"
+       alt="" class="position-absolute start-50 translate-middle-x w-100" style="bottom:-120px; z-index:2;">
+</div>
+
+<style>
+  .hero-section {
+    position: relative;
+    min-height: 100vh; /* full screen height */
+    overflow: hidden;
+  }
+
+  .hero-section video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .hero-section img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+</style>
 
 
-        <!-- Navigation -->
-        <div class="row nav-row transparent align-items-center px-md-5 py-md-4" id="navbar">
-            <div class="col-sm-4 col-md-3">
-                <a href="https://www.wix.com/demone2/autono" class="fw-bold">AUTONO</a>
-            </div>
-            <div class="col-sm-8 col-md-9">
-                <ul class="nav-list">
-                    <li><a href="https://www.wix.com/demone2/autono/technology">Technology</a></li>
-                    <li><a href="https://www.wix.com/demone2/autono/about">About</a></li>
-                    <li><a href="https://www.wix.com/demone2/autono/careers">Careers</a></li>
-                    <li><a href="#">More</a></li>
-                </ul>
-            </div>
+
+
+<div class="servicesMT container-fluid bg-black d-flex align-items-end" style="min-height:900px;">
+  <div class="row w-100 mb-4">
+    <!-- Text column -->
+    <div class="col-12 col-md-5 d-flex align-items-center">
+      <div class="service-box p-4 w-100">
+        <h3 class="fw-bold text-white">AUTONOMOUS DRIVING</h3>
+        <p class="text-white-50 mb-3">
+          I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+          Text” or double click me to add your own content and make changes to the font. I’m a great
+          place for you to tell a story and let your users know a little more about you.
+        </p>
+        <a href="https://www.wix.com/demone2/autono/technology" class="btn btn-outline-light btn-sm">
+          Read More
+        </a>
+      </div>
+    </div>
+
+    <!-- Image column -->
+    <div class="col-12 col-md-7 d-flex align-items-center justify-content-center">
+      <div class=" w-100 text-center">
+        <img
+          src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_811,h_630,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg"
+          class="img-fluid"
+          alt="Responsive image">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- SERVICES SECTION (dark background, Bootstrap grid) -->
+  <section class="services text-dark py-5">
+    <div class="container-fluid">
+
+      <!-- Row 1: Section title and intro -->
+      <div class="row align-items-start mb-4  ">
+        <div class="col-6">
+          <h2 class="fw-bold text-black mb-3 ">SERVICES</h2>
+          <p class="text-black-50">We Deliver Exceptional Products and Services Around the World</p>
+        </div>
+        <div class="col-6">
+          <!-- Feature: Autonomous Driving -->
+
+        </div>
+      </div>
+
+      <!-- Row 2: Real-Time Information -->
+      <div class="row align-items-start mb-4">
+        <div class="col-6">
+          <div class="service-box p-4 h-100">
+            <h3 class="fw-bold text-white">AUTONOMOUS
+              DRIVING</h3>
+            <p class="text-white-50 mb-3">
+              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+              Text” or double click me to add your own content and make changes to the font. I’m a great
+              place for you to tell a story and let your users know a little more about you.
+            </p>
+            <a href="https://www.wix.com/demone2/autono/technology" class="btn btn-outline-light btn-sm">Read More</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <!-- Keep symmetrical spacing or add an ambient image if desired -->
+          <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
+            <img
+              src="https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_676,h_510,al_l,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg"
+              class="img-fluid" alt="Responsive image">
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Row 3: Perception Enabled -->
+
+      <div class="row align-items-start mb-4">
+        <div class="col-6">
+          <!-- Keep symmetrical spacing or add an ambient image if desired -->
+
+          <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
+            <img
+              src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_676,h_510,al_r,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg"
+              class="img-fluid" alt="Responsive image">
+
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="service-box p-4 h-100">
+            <h3 class="fw-bold text-white">REAL-TIME INFORMATION</h3>
+            <p class="text-white-50 mb-3">
+              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+              Text” or double click me
+              to add your own content and make changes to the font. I’m a great place for you to tell a
+              story and let your users
+              know a little more about you.
+            </p>
+            <a href="https://www.wix.com/demone2/autono/technology" class="btn btn-outline-light btn-sm">Read More</a>
+          </div>
         </div>
 
-        <!-- Hero text -->
-        <div class="hero-content text-black">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-12 col-md-6 mx-auto text-center ">
-                        <h1 class="fw-bold text-black">THE FUTURE OF MOBILITY IS HERE</h1>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 col-md-6 mx-auto text-center">
-                        <p class="fs-5 text-black">Discover the safest self-driving experience with Autono.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
 
-        <!-- Darker bottom shadow overlay -->
+
+
+
+
+      <!-- Row 4: Why Autono -->
+      <div class="row align-items-start mb-4">
+        <div class="col-6">
+          <div class="service-box p-4 h-100">
+            <h3 class="fw-bold text-white">PERCEPTION ENABLED</h3>
+            <p class="text-white-50 mb-3">
+              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+              Text” or double
+              click me
+              to add your own content and make changes to the font. I’m a great place for you to tell a
+              story and let your
+              users
+              know a little more about you.
+            </p>
+            <a href="https://www.wix.com/demone2/autono/technology" class="btn btn-outline-light btn-sm">Read More</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <!-- Keep symmetrical spacing or add an ambient image if desired -->
+          <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
+            <img
+              src="https://static.wixstatic.com/media/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg/v1/fill/w_676,h_510,al_l,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg"
+              class="img-fluid" alt="Responsive image" class="img-fluid" alt="Responsive image">
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Row 5: Autono in Numbers (example split start) -->
 
 
     </div>
-    <img src="https://static.wixstatic.com/media/84770f_3ebbf7ac3e26427b83ca50c82aabaaf8~mv2.png/v1/fill/w_1351,h_450,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3ebbf7ac3e26427b83ca50c82aabaaf8~mv2.png"
-        alt="" ;>
-
-
-    <div class="container-fluid bg-black">
+  </section>
 
 
 
 
-        <div class="row align-items-start mb-4">
-            <div class="col-5">
-                <div class="service-box p-4 h-100">
-                    <h3 class="fw-bold text-white">AUTONOMOUS
-                        DRIVING</h3>
-                    <p class="text-white-50 mb-3">
-                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-                        Text” or double click me to add your own content and make changes to the font. I’m a great
-                        place for you to tell a story and let your users know a little more about you.
-                    </p>
-                    <a href="https://www.wix.com/demone2/autono/technology" class="btn btn-outline-light btn-sm">Read
-                        More</a>
-                </div>
-            </div>
-            <div class="col-7">
-                <!-- Keep symmetrical spacing or add an ambient image if desired -->
-                <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
+  <style>
 
-                    <img src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_811,h_630,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg"
-                        class="img-fluid" alt="Responsive image">
 
-                </div>
+  </style>
 
-            </div>
+  <!-- WHY AUTONO PARALLAX SECTION -->
+  <section class="why-autono-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left col-6: content box -->
+        <div class="col-12 col-md-6">
+          <div class="why-box">
+            <h2 class="fw-bold mb-3">WHY AUTONO</h2>
+            <p class="lead mb-2">A different approach, using a new method of manufacturing.</p>
+            <p class="mb-4">
+              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+              or double click me to add your own content and make changes to the font. I’m a great place for
+              you to tell a story and let your users know a little more about you.
+            </p>
+            <a href="https://www.wix.com/demone2/autono/about" class="btn btn-dark px-4">Read More</a>
+          </div>
         </div>
+
+        <!-- Right col-6: keep empty (visual balance) or add media if desired -->
+        <div class="col-12 col-md-6">
+
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- AUTONO IN NUMBERS SECTION -->
+  <section class="autono-numbers py-5">
+    <div class="container-fluid">
+      <div class="row align-items-center">
 
-
-
-
-    <!-- SERVICES SECTION (dark background, Bootstrap grid) -->
-    <section class="services text-dark py-5">
-        <div class="container-fluid">
-
-            <!-- Row 1: Section title and intro -->
-            <div class="row align-items-start mb-4  ">
-                <div class="col-6">
-                    <h2 class="fw-bold text-black mb-3 ">SERVICES</h2>
-                    <p class="text-black-50">We Deliver Exceptional Products and Services Around the World</p>
-                </div>
-                <div class="col-6">
-                    <!-- Feature: Autonomous Driving -->
-
-                </div>
-            </div>
-
-            <!-- Row 2: Real-Time Information -->
-            <div class="row align-items-start mb-4">
-                <div class="col-6">
-                    <div class="service-box p-4 h-100">
-                        <h3 class="fw-bold text-white">AUTONOMOUS
-                            DRIVING</h3>
-                        <p class="text-white-50 mb-3">
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-                            Text” or double click me to add your own content and make changes to the font. I’m a great
-                            place for you to tell a story and let your users know a little more about you.
-                        </p>
-                        <a href="https://www.wix.com/demone2/autono/technology"
-                            class="btn btn-outline-light btn-sm">Read More</a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <!-- Keep symmetrical spacing or add an ambient image if desired -->
-                    <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
-                        <img src="https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_676,h_510,al_l,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg"
-                            class="img-fluid" alt="Responsive image">
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Row 3: Perception Enabled -->
-
-            <div class="row align-items-start mb-4">
-                <div class="col-6">
-                    <!-- Keep symmetrical spacing or add an ambient image if desired -->
-
-                    <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
-                        <img src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_676,h_510,al_r,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg"
-                            class="img-fluid" alt="Responsive image">
-
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="service-box p-4 h-100">
-                        <h3 class="fw-bold text-white">REAL-TIME INFORMATION</h3>
-                        <p class="text-white-50 mb-3">
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-                            Text” or double click me
-                            to add your own content and make changes to the font. I’m a great place for you to tell a
-                            story and let your users
-                            know a little more about you.
-                        </p>
-                        <a href="https://www.wix.com/demone2/autono/technology"
-                            class="btn btn-outline-light btn-sm">Read More</a>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-
-            <!-- Row 4: Why Autono -->
-            <div class="row align-items-start mb-4">
-                <div class="col-6">
-                    <div class="service-box p-4 h-100">
-                        <h3 class="fw-bold text-white">PERCEPTION ENABLED</h3>
-                        <p class="text-white-50 mb-3">
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-                            Text” or double
-                            click me
-                            to add your own content and make changes to the font. I’m a great place for you to tell a
-                            story and let your
-                            users
-                            know a little more about you.
-                        </p>
-                        <a href="https://www.wix.com/demone2/autono/technology"
-                            class="btn btn-outline-light btn-sm">Read More</a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <!-- Keep symmetrical spacing or add an ambient image if desired -->
-                    <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
-                        <img src="https://static.wixstatic.com/media/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg/v1/fill/w_676,h_510,al_l,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg"
-                            class="img-fluid" alt="Responsive image" class="img-fluid" alt="Responsive image">
-
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Row 5: Autono in Numbers (example split start) -->
-
-
+        <!-- Left col-6: image -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <img
+            src="https://static.wixstatic.com/media/c837a6_3a4f054db4424af1b034f96ddd7b691a~mv2.jpg/v1/fill/w_490,h_760,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_3a4f054db4424af1b034f96ddd7b691a~mv2.jpg"
+            alt="Autono numbers image" class="img-fluid rounded shadow"
+            style="object-fit: cover; width:100%; height:auto;">
         </div>
-    </section>
 
-<!-- WHY AUTONO PARALLAX SECTION -->
-<section class="why-autono-section">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left col-6: content box -->
-      <div class="col-12 col-md-6">
-        <div class="why-box">
-          <h2 class="fw-bold mb-3">WHY AUTONO</h2>
-          <p class="lead mb-2">A different approach, using a new method of manufacturing.</p>
-          <p class="mb-4">
-            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-            or double click me to add your own content and make changes to the font. I’m a great place for
-            you to tell a story and let your users know a little more about you.
+        <!-- Right col-6: content -->
+        <div class="col-12 col-md-6">
+          <h2 class="fw-bold mb-4">Autono In Numbers</h2>
+
+          <!-- Grid of stats -->
+          <div class="row g-4">
+            <div class="col-6 text-center">
+              <div class="stat-box">
+                <div class="stat-value">200</div>
+                <div class="stat-label">EMPLOYEES</div>
+              </div>
+            </div>
+            <div class="col-6 text-center">
+              <div class="stat-box">
+                <div class="stat-value">5</div>
+                <div class="stat-label">CORE TEAMS</div>
+              </div>
+            </div>
+            <div class="col-6 text-center">
+              <div class="stat-box">
+                <div class="stat-value">200M$</div>
+                <div class="stat-label">CAPITAL</div>
+              </div>
+            </div>
+            <div class="col-6 text-center">
+              <div class="stat-box">
+                <div class="stat-value">326</div>
+                <div class="stat-label">PARTNERS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- INDUSTRY / OUR PARTNERS SECTION -->
+  <section class="industry-partners py-5  text-white bg-black">
+    <div class="container">
+      <div class="row align-items-start">
+
+        <!-- Left col-6: text content -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <h6 class="fw-bold text-uppercase mb-2" style="letter-spacing:0.16em;">Industry</h6>
+          <hr class="mb-3">
+          <h2 class="fw-bold mb-3" style="letter-spacing:0.08em;">Our<br>Partners</h2>
+          <hr class="mb-3">
+          <p class="mb-0" style="font-size:16px; line-height:1.8em; letter-spacing:0.04em;">
+            Click here to add your own content and customize the text. This is a great place to tell a story
+            about your company and let your users know a little more about the company's history, the team's
+            background, or any other information you'd like to share. Just click "Edit Text" to get started.
           </p>
-          <a href="https://www.wix.com/demone2/autono/about" class="btn btn-dark px-4">Read More</a>
         </div>
-      </div>
 
-      <!-- Right col-6: keep empty (visual balance) or add media if desired -->
-     <div class="col-12 col-md-6">
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AUTONO IN NUMBERS SECTION -->
-<section class="autono-numbers py-5">
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      
-      <!-- Left col-6: image -->
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <img src="https://static.wixstatic.com/media/c837a6_3a4f054db4424af1b034f96ddd7b691a~mv2.jpg/v1/fill/w_490,h_760,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_3a4f054db4424af1b034f96ddd7b691a~mv2.jpg"
-             alt="Autono numbers image"
-             class="img-fluid rounded shadow"
-             style="object-fit: cover; width:100%; height:auto;">
-      </div>
-
-      <!-- Right col-6: content -->
-      <div class="col-12 col-md-6">
-        <h2 class="fw-bold mb-4">Autono In Numbers</h2>
-        
-        <!-- Grid of stats -->
-        <div class="row g-4">
-          <div class="col-6 text-center">
-            <div class="stat-box">
-              <div class="stat-value">200</div>
-              <div class="stat-label">EMPLOYEES</div>
+        <!-- Right col-6: partner logos grid -->
+        <div class="col-12 col-md-6 text-white bg-black">
+          <div class="row text-center g-4">
+            <!-- Partner 1 -->
+            <div class="col-6">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_a8508672733a4bb7ba100662952d4f6f~mv2.png/v1/fill/w_140,h_140,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/General_Transport.png"
+                alt="General Transport" class="img-fluid mb-2" style="max-height:140px; object-fit:contain;">
+              <p class="text-uppercase" style="font-size:14px; letter-spacing:0.16em;">General Transport</p>
             </div>
-          </div>
-          <div class="col-6 text-center">
-            <div class="stat-box">
-              <div class="stat-value">5</div>
-              <div class="stat-label">CORE TEAMS</div>
+            <!-- Partner 2 -->
+            <div class="col-6">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_24669e1d20cd4f079fd2ea5e253c99b8~mv2.png/v1/fill/w_88,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IDI_Software.png"
+                alt="IDI Software" class="img-fluid mb-2" style="max-height:64px; object-fit:contain;">
+              <p class="text-uppercase" style="font-size:14px; letter-spacing:0.16em;">IDI Software</p>
             </div>
-          </div>
-          <div class="col-6 text-center">
-            <div class="stat-box">
-              <div class="stat-value">200M$</div>
-              <div class="stat-label">CAPITAL</div>
+            <!-- Partner 3 -->
+            <div class="col-6">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_db1c6e9c1b95497f81465ccd218fa048~mv2.png/v1/fill/w_88,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Imogen_Cars.png"
+                alt="Imogen Cars" class="img-fluid mb-2" style="max-height:80px; object-fit:contain;">
+              <p class="text-uppercase" style="font-size:14px; letter-spacing:0.16em;">Imogen Cars</p>
             </div>
-          </div>
-          <div class="col-6 text-center">
-            <div class="stat-box">
-              <div class="stat-value">326</div>
-              <div class="stat-label">PARTNERS</div>
+            <!-- Partner 4 -->
+            <div class="col-6">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_81bc98e386764170adbb3e97cc7e1655~mv2.png/v1/fill/w_128,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tri-Nex%20.png"
+                alt="Tri-Nex" class="img-fluid mb-2" style="max-height:64px; object-fit:contain;">
+              <p class="text-uppercase" style="font-size:14px; letter-spacing:0.16em;">Tri-Nex</p>
             </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
 
 
-<!-- INDUSTRY / OUR PARTNERS SECTION -->
-<section class="industry-partners py-5  text-white bg-black">
-  <div class="container">
-    <div class="row align-items-start">
-      
-      <!-- Left col-6: text content -->
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <h6 class="fw-bold text-uppercase mb-2" style="letter-spacing:0.16em;">Industry</h6>
-        <hr class="mb-3">
-        <h2 class="fw-bold mb-3" style="letter-spacing:0.08em;">Our<br>Partners</h2>
-        <hr class="mb-3">
-        <p class="mb-0" style="font-size:16px; line-height:1.8em; letter-spacing:0.04em;">
-          Click here to add your own content and customize the text. This is a great place to tell a story 
-          about your company and let your users know a little more about the company's history, the team's 
-          background, or any other information you'd like to share. Just click "Edit Text" to get started.
-        </p>
-      </div>
 
-      <!-- Right col-6: partner logos grid -->
-      <div class="col-12 col-md-6 text-white bg-black">
-        <div class="row text-center g-4">
-          <!-- Partner 1 -->
-          <div class="col-6">
-            <img src="https://static.wixstatic.com/media/c837a6_a8508672733a4bb7ba100662952d4f6f~mv2.png/v1/fill/w_140,h_140,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/General_Transport.png"
-                 alt="General Transport" class="img-fluid mb-2" style="max-height:140px; object-fit:contain;">
-            <p class="text-uppercase" style="font-size:14px; letter-spacing:0.16em;">General Transport</p>
-          </div>
-          <!-- Partner 2 -->
-          <div class="col-6">
-            <img src="https://static.wixstatic.com/media/c837a6_24669e1d20cd4f079fd2ea5e253c99b8~mv2.png/v1/fill/w_88,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IDI_Software.png"
-                 alt="IDI Software" class="img-fluid mb-2" style="max-height:64px; object-fit:contain;">
-            <p class="text-uppercase" style="font-size:14px; letter-spacing:0.16em;">IDI Software</p>
-          </div>
-          <!-- Partner 3 -->
-          <div class="col-6">
-            <img src="https://static.wixstatic.com/media/c837a6_db1c6e9c1b95497f81465ccd218fa048~mv2.png/v1/fill/w_88,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Imogen_Cars.png"
-                 alt="Imogen Cars" class="img-fluid mb-2" style="max-height:80px; object-fit:contain;">
-            <p class="text-uppercase" style="font-size:14px; letter-spacing:0.16em;">Imogen Cars</p>
-          </div>
-          <!-- Partner 4 -->
-          <div class="col-6">
-            <img src="https://static.wixstatic.com/media/c837a6_81bc98e386764170adbb3e97cc7e1655~mv2.png/v1/fill/w_128,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tri-Nex%20.png"
-                 alt="Tri-Nex" class="img-fluid mb-2" style="max-height:64px; object-fit:contain;">
-            <p class="text-uppercase" style="font-size:14px; letter-spacing:0.16em;">Tri-Nex</p>
-          </div>
+
+  <!-- CAREERS SECTION (Row 3) -->
+  <section class="careers-section py-5">
+    <div class="container">
+      <div class="row align-items-start">
+
+        <!-- Left col-6: Careers intro -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <h6 class="fw-bold text-uppercase mb-2" style="letter-spacing:0.16em;">Careers</h6>
+          <hr class="border-light mb-3">
+          <p class="fs-4 mb-4" style="letter-spacing:0.08em;">
+            We’re looking for innovative talent to join our team. See all positions and submit your CV.
+          </p>
+          <a href="https://www.wix.com/demone2/autono/careers" class="btn btn-light px-4">Openings</a>
         </div>
-      </div>
 
-    </div>
-  </div>
-</section>
+        <!-- Right col-6: Carousel of job positions -->
+        <div class="col-12 col-md-6">
+          <div id="carouselCareers" class="carousel slide" data-bs-ride="carousel">
 
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselCareers" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselCareers" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselCareers" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
 
+            <!-- Carousel inner -->
+            <div class="carousel-inner">
 
-
-
-
-
-<!-- CAREERS SECTION (Row 3) -->
-<section class="careers-section py-5">
-  <div class="container">
-    <div class="row align-items-start">
-      
-      <!-- Left col-6: Careers intro -->
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <h6 class="fw-bold text-uppercase mb-2" style="letter-spacing:0.16em;">Careers</h6>
-        <hr class="border-light mb-3">
-        <p class="fs-4 mb-4" style="letter-spacing:0.08em;">
-          We’re looking for innovative talent to join our team. See all positions and submit your CV.
-        </p>
-        <a href="https://www.wix.com/demone2/autono/careers" class="btn btn-light px-4">Openings</a>
-      </div>
-
-      <!-- Right col-6: Carousel of job positions -->
-      <div class="col-12 col-md-6">
-        <div id="carouselCareers" class="carousel slide" data-bs-ride="carousel">
-          
-          <!-- Indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselCareers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselCareers" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselCareers" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-
-          <!-- Carousel inner -->
-          <div class="carousel-inner">
-
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="job-card p-4">
-                <h5 class="fw-bold mb-2" style="letter-spacing:0.08em;">Artificial Intelligence Researcher</h5>
-                <p class="text-muted mb-2" style="letter-spacing:0.08em;">San Francisco, CA</p>
-                <p class="mb-3" style="letter-spacing:0.04em;">
-                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                  or double click me to add your own content and make changes to the font.
-                </p>
-                <a href="https://www.wix.com/demone2/autono/artificial-intelligence-researcher" class="btn btn-light px-4">Apply Now</a>
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="job-card p-4">
+                  <h5 class="fw-bold mb-2" style="letter-spacing:0.08em;">Artificial Intelligence Researcher</h5>
+                  <p class="text-muted mb-2" style="letter-spacing:0.08em;">San Francisco, CA</p>
+                  <p class="mb-3" style="letter-spacing:0.04em;">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me to add your own content and make changes to the font.
+                  </p>
+                  <a href="https://www.wix.com/demone2/autono/artificial-intelligence-researcher"
+                    class="btn btn-light px-4">Apply Now</a>
+                </div>
               </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="job-card p-4">
+                  <h5 class="fw-bold mb-2" style="letter-spacing:0.08em;">Autonomous Systems Engineer</h5>
+                  <p class="text-muted mb-2" style="letter-spacing:0.08em;">San Francisco, CA</p>
+                  <p class="mb-3" style="letter-spacing:0.04em;">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me to add your own content and make changes to the font.
+                  </p>
+                  <a href="#" class="btn btn-light px-4">Apply Now</a>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="job-card p-4">
+                  <h5 class="fw-bold mb-2" style="letter-spacing:0.08em;">Data Scientist</h5>
+                  <p class="text-muted mb-2" style="letter-spacing:0.08em;">San Francisco, CA</p>
+                  <p class="mb-3" style="letter-spacing:0.04em;">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me to add your own content and make changes to the font.
+                  </p>
+                  <a href="#" class="btn btn-light px-4">Apply Now</a>
+                </div>
+              </div>
+
             </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="job-card p-4">
-                <h5 class="fw-bold mb-2" style="letter-spacing:0.08em;">Autonomous Systems Engineer</h5>
-                <p class="text-muted mb-2" style="letter-spacing:0.08em;">San Francisco, CA</p>
-                <p class="mb-3" style="letter-spacing:0.04em;">
-                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                  or double click me to add your own content and make changes to the font.
-                </p>
-                <a href="#" class="btn btn-light px-4">Apply Now</a>
-              </div>
-            </div>
+            <!-- Controls -->
 
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <div class="job-card p-4">
-                <h5 class="fw-bold mb-2" style="letter-spacing:0.08em;">Data Scientist</h5>
-                <p class="text-muted mb-2" style="letter-spacing:0.08em;">San Francisco, CA</p>
-                <p class="mb-3" style="letter-spacing:0.04em;">
-                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                  or double click me to add your own content and make changes to the font.
-                </p>
-                <a href="#" class="btn btn-light px-4">Apply Now</a>
-              </div>
-            </div>
 
           </div>
-
-          <!-- Controls -->
-          
-
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -828,57 +901,60 @@
 
 
   <footer class="footer-autono">
-  <div class="container-fluid py-5">
-    <div class="row">
-      <!-- Left col-6: Links + Contact -->
-      <div class="col-12 col-md-6 mb-4">
-        <h5 class="fw-bold mb-3">AUTONO</h5>
-        <ul class="list-unstyled mb-4">
-          <li class="mb-2"><a href="https://www.wix.com/demone2/autono/technology" class="footer-link">Technology</a></li>
-          <li class="mb-2"><a href="https://www.wix.com/demone2/autono/about" class="footer-link">About</a></li>
-          <li class="mb-2"><a href="https://www.wix.com/demone2/autono/careers" class="footer-link">Careers</a></li>
-        </ul>
-        <p class="mb-2">Tel: 123-456-7890</p>
-        <p class="mb-2">Email: <a href="mailto:info@mysite.com" class="footer-link">info@mysite.com</a></p>
-        <p class="mb-0">500 Terry Francine St<br>San Francisco, CA 94158</p>
+    <div class="container-fluid py-5">
+      <div class="row">
+        <!-- Left col-6: Links + Contact -->
+        <div class="col-12 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3">AUTONO</h5>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2"><a href="https://www.wix.com/demone2/autono/technology" class="footer-link">Technology</a>
+            </li>
+            <li class="mb-2"><a href="https://www.wix.com/demone2/autono/about" class="footer-link">About</a></li>
+            <li class="mb-2"><a href="https://www.wix.com/demone2/autono/careers" class="footer-link">Careers</a></li>
+          </ul>
+          <p class="mb-2">Tel: 123-456-7890</p>
+          <p class="mb-2">Email: <a href="mailto:info@mysite.com" class="footer-link">info@mysite.com</a></p>
+          <p class="mb-0">500 Terry Francine St<br>San Francisco, CA 94158</p>
+        </div>
+
+        <!-- Right col-6: Subscribe form -->
+        <div class="col-12 col-md-6 mb-4">
+          <h5 class="fw-bold mb-2">SUBSCRIBE</h5>
+          <p class="mb-3">Sign up to receive Autono news and updates.</p>
+          <form>
+            <div class="mb-3">
+              <label for="subscribeEmail" class="form-label">Email*</label>
+              <input type="email" id="subscribeEmail" class="form-control footer-input" placeholder="Enter your email"
+                required>
+            </div>
+            <button type="submit" class="btn btn-dark fw-semibold px-4 mb-3">Subscribe</button>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="subscribeConsent" required>
+              <label class="form-check-label" for="subscribeConsent">
+                Yes, subscribe me to your newsletter.*
+              </label>
+            </div>
+          </form>
+        </div>
       </div>
 
-      <!-- Right col-6: Subscribe form -->
-      <div class="col-12 col-md-6 mb-4">
-        <h5 class="fw-bold mb-2">SUBSCRIBE</h5>
-        <p class="mb-3">Sign up to receive Autono news and updates.</p>
-        <form>
-          <div class="mb-3">
-            <label for="subscribeEmail" class="form-label">Email*</label>
-            <input type="email" id="subscribeEmail" class="form-control footer-input" placeholder="Enter your email" required>
-          </div>
-          <button type="submit" class="btn btn-dark fw-semibold px-4 mb-3">Subscribe</button>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="subscribeConsent" required>
-            <label class="form-check-label" for="subscribeConsent">
-              Yes, subscribe me to your newsletter.*
-            </label>
-          </div>
-        </form>
+      <!-- Divider -->
+      <hr class="my-4">
+
+      <!-- Bottom row -->
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-muted">
+          © 2035 by Autono. Powered and secured by <a href="https://wix.com/?utm_campaign=vir_created_with"
+            class="footer-link">Wix</a>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a href="#" class="footer-icon me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer-icon me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+        </div>
       </div>
     </div>
-
-    <!-- Divider -->
-    <hr class="my-4">
-
-    <!-- Bottom row -->
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6 text-muted">
-        © 2035 by Autono. Powered and secured by <a href="https://wix.com/?utm_campaign=vir_created_with" class="footer-link">Wix</a>
-      </div>
-      <div class="col-12 col-md-6 text-md-end">
-        <a href="#" class="footer-icon me-3"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="footer-icon me-3"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 
 
@@ -892,32 +968,32 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const navbar = document.getElementById("navbar");
-        let lastScrollTop = 0;
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+    let lastScrollTop = 0;
 
-        window.addEventListener("scroll", () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            // show/hide based on scroll direction
-            if (scrollTop < lastScrollTop) {
-                navbar.classList.add("visible");
-            } else {
-                navbar.classList.remove("visible");
-            }
+      // show/hide based on scroll direction
+      if (scrollTop < lastScrollTop) {
+        navbar.classList.add("visible");
+      } else {
+        navbar.classList.remove("visible");
+      }
 
-            // transparent at top, white when scrolled
-            if (scrollTop === 0) {
-                navbar.classList.add("transparent");
-                navbar.classList.remove("scrolled");
-            } else {
-                navbar.classList.remove("transparent");
-                navbar.classList.add("scrolled");
-            }
+      // transparent at top, white when scrolled
+      if (scrollTop === 0) {
+        navbar.classList.add("transparent");
+        navbar.classList.remove("scrolled");
+      } else {
+        navbar.classList.remove("transparent");
+        navbar.classList.add("scrolled");
+      }
 
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        }, { passive: true });
-    });
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }, { passive: true });
+  });
 </script>
 
 </html>
