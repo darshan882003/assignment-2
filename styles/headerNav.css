@@ -2,7 +2,10 @@
 .video-bg {
   object-fit: cover;
   z-index: 0;
+  /* transform: scale(1.2); */
 }
+
+
 
 /* Navbar */
 .nav-z {
@@ -37,7 +40,7 @@
 }
 
 .letter-spacing-AUTONO {
-  letter-spacing: 10px;
+  letter-spacing: 8px;
 }
 
 /* Letter spacing utility */
@@ -99,6 +102,14 @@
   letter-spacing: 1px;
 }
 
+
+
+/* ✅ For screens below md (max-width: 767px) */
+@media (max-width: 998px) {
+  .video-bg {
+    height: 100%;   /* full height on small screens */
+  }
+}
 
 
 

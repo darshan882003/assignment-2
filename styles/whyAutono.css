@@ -1,17 +1,17 @@
-/* Custom width for the box (clamp) */
-
-
+/* Base widths */
 .box-width {
   width: clamp(17rem, 100vw, 35rem);
 }
 
-/* Negative margin for overlap */
-.ml-n50 {
-  margin-left: -50px;
-  
+.para-width {
+  width: 220px;
 }
 
-/* Vision text */
+.ml-n50 { margin-left: -50px; }
+
+.whyAutonPadding { padding: 10px; }
+.whyAutonPadding .h1 { padding-left: 20px; }
+
 .vision-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -21,55 +21,23 @@
   letter-spacing: 2px;
 }
 
-/* Heading style */
 .heading-style2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #fff;
   font-size: clamp(18px, 2.5vw, 24px);
   line-height: clamp(28px, 4vw, 43px);
-
-}
-.heading-style2 {
-  /* Default desktop values */
   margin-left: -20px;
   padding-left: 40px;
 }
 
-/* Tablet (768px–991px) */
-@media (max-width: 991px) {
-  .heading-style {
-    margin-left: -30px;   /* shift more to the left */
-    padding-left: 60px;   /* add more padding */
-  }
-}
-
-/* Mobile (≤767px) */
-@media (max-width: 767px) {
-  .heading-style {
-    margin-left: -40px;   /* shift even more */
-    padding-left: 80px;   /* give extra padding for small screens */
-    max-width: 100%;      /* prevent overflow */
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-
-
-/* Paragraph style */
- .fontp {
+.fontp {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   color: rgb(200, 200, 200);
-
-  /* Desktop: exactly 16px */
   font-size: clamp(14px, 2.5vw, 16px);
-
-  /* Desktop: exactly 29px */
   line-height: clamp(20px, 4vw, 29px);
 }
 
-/* Parallax section background */
 .why-autono-section {
   position: relative;
   min-height: 600px;
@@ -90,5 +58,97 @@
   .why-autono-section {
     background-attachment: scroll;
     padding: 40px 0;
+  }
+}
+
+/* Tablet breakpoint (≤ 780px) */
+@media (max-width: 780px) {
+  /* Force col-md-5 to behave like col-sm-12 */
+  .autono-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .box-width,
+  .why-autono-section .service-box-black {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin: 0;
+    padding: 1.5rem;
+    display: block;
+  }
+
+  .why-autono-section .border-start {
+    border: none !important;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .heading-style2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .para-width {
+    width: 100% !important;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fontp {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .why-autono-section {
+    padding: 40px 1rem;
+    background-attachment: scroll;
+  }
+}
+
+/* Mobile breakpoint (≤ 380px) */
+@media (max-width: 380px) {
+  .box-width,
+  .why-autono-section .service-box-black {
+    width: 100% !important;
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  .heading-style2 {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .vision-text {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .para-width {
+    width: 95% !important;
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fontp {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .why-autono-section {
+    padding: 30px 0.5rem;
   }
 }

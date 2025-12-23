@@ -19,6 +19,13 @@
     font-size: clamp(16px, 1.5vw, 18px);
   }
 
+  .subscribe{
+    letter-spacing: 3px !important;
+    font-weight: 100;
+  }
+
+
+
   /* Links */
   .footer-link {
     color: #000;

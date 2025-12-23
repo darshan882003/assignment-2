@@ -6,6 +6,15 @@
   letter-spacing: 2px;
 }
 
+.msgrid{
+  margin-left: 4.5rem;
+  margin-right: 10rem;
+  
+}
+.marginbellow{
+  margin-bottom: 10rem;
+}
+
 .heading-style {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -52,6 +61,15 @@
 .services img{
   scale: (1.9);
 }
+.services .img1{
+  
+
+  translate: 70px 0
+}
+
+.services .img3{
+  translate: 70px 0
+}
 
 .service-ambient {
   overflow: hidden; 
@@ -63,3 +81,94 @@
   display: block; /* Helps with alignment */
 }
 
+.btn-dark:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+
+/* Tablet breakpoint (≤ 780px) */
+@media (max-width: 780px) {
+  /* Remove borders on headings */
+  .servicetext,
+  .services .border-start {
+    border: none !important;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Force service boxes to full width */
+  .service-box-light,
+  .msgrid {
+    width: 100% !important;   /* override inline 24rem */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .marginbellow {
+    margin-bottom: 4rem;
+  }
+
+  /* Scale down heading and paragraph text */
+  .fontHeading {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .fontp {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  /* Images scale down */
+  .service-ambient img {
+    transform: scale(1.1);
+    max-width: 100%;   /* ensure image fits container */
+    height: auto;
+  }
+}
+
+
+/* Mobile breakpoint (≤ 380px) */
+@media (max-width: 380px) {
+  /* Remove borders completely */
+  .servicetext,
+  .services .border-start {
+    border: none !important;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .msgrid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .marginbellow {
+    margin-bottom: 2rem;
+  }
+
+  .fontHeading {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .fontp {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  /* Images scale to fit */
+  .service-ambient img {
+    transform: scale(1);
+    max-width: 100%;
+    height: auto;
+  }
+}

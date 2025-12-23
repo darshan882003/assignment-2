@@ -27,38 +27,76 @@
     color: #fff;
   }
 
-  /* Carousel rounded edges */
-  .carousel-inner {
-    border-radius: 1rem;
-    overflow: hidden;
+@media (max-width: 780px) {
+  .careers-section .col-lg-6,
+  .careers-section .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
   }
+  .box-width {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1.5rem;
+  }
+  .max-w-25rem {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .heading-style {
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 0;
+  }
+  .vision-text,
+  .fontp {
+    text-align: center;
+  }
+  /* Remove borders everywhere except carousel */
+  .careers-section .border1,
+  .careers-section .border-start {
+    border: none !important;
+  }
+}
 
-  /* Dot indicators */
-  .carousel-indicators [data-bs-target] {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #fff
+/* Mobile breakpoint (≤380px) */
+@media (max-width: 380px) {
+  .careers-section .col-lg-6,
+  .careers-section .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .box-width {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1rem;
+    border-radius: 0;
+  }
+  .max-w-25rem {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .heading-style {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .vision-text {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .fontp {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+  }
+  /* Remove borders everywhere except carousel */
+  .careers-section .border1,
+  .careers-section .border-start {
+    border: none !important;
+  }
+}
 
-  }
-  /* Carousel rounded edges */
-  .carousel-inner {
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-
-  /* Dot indicators */
-  .carousel-indicators [data-bs-target] {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    margin: 0 6px;
-  }
-
-  .carousel-indicators .active {
-    opacity: 1;
-    background-color: #000; /* active dot color */
-  }
 
