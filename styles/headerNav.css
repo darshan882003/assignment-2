@@ -34,10 +34,19 @@
 }
 
 /* Bottom image */
+.hero-section {
+  position: relative;
+}
+
 .bottom-img {
-  bottom: -180px;
+  position: absolute;
+  bottom: 800px;   /* overlap upward/downward */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   z-index: 2;
 }
+
 
 .letter-spacing-AUTONO {
   letter-spacing: 8px;

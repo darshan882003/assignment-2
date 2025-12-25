@@ -122,12 +122,11 @@
     <!-- Bottom overlay image -->
     <img
       src="https://static.wixstatic.com/media/84770f_3ebbf7ac3e26427b83ca50c82aabaaf8~mv2.png/v1/fill/w_1351,h_450,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3ebbf7ac3e26427b83ca50c82aabaaf8~mv2.png"
-      alt="" class="   translate-middle-x w-100 bottom-img ">
+      alt="" class="     bottom-img ">
   </div>
 
   <!-- Bootstrap CSS & JS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Removed duplicate Bootstrap includes (kept CSS in <head> and JS at end of file) -->
 
 
 
@@ -157,16 +156,17 @@
 
 
 
-  <div class="servicesMT container-fluid bg-black d-flex align-items-end min-vh-100 pb-5" style="min-height:900px;">
-    <div class="row w-100  mb-md-4 ">
+  <div class="servicesMT container-fluid bg-black d-flex align-items-end min-vh-100 " style="min-height:900px;">
+    <div class="row w-100  mb-lg-4 ">
+
+      <div class="topcover"></div>
       <!-- Text column -->
       <div
-        class="col-12 col-sm-6 service-box-dark bg-black text-white px-5 py-0 h-auto d-flex flex-column gap-3 align-content-center justify-content-center marginvision partial-border-1 "
-        style="width:25rem;">
+        class="col-12 col-sm-6 service-box-dark bg-black text-white  h-auto d-flex flex-column gap-3 align-content-between justify-content-evenly marginvision partial-border-1 ">
 
-        <p class="vision-text1 mb-3 px-md-4 py-0">VISION</p>
+        <p class="vision-text1 mb-3 pe-md-4 py-0">VISION</p>
 
-        <div class="h1 w-100 border-start border-3 border-light">
+        <div class="h1  border-start border-3 border-light">
           <h3 class="heading-style ">
             We’re Changing the Way the World Thinks About Cars
           </h3>
@@ -180,9 +180,10 @@
           </p>
         </div>
       </div>
+      <div class="bottomcover"></div>
 
       <!-- Image column -->
-      <div class="col-12 col-sm-6 d-flex align-items-center justify-content-center visionImg">
+      <div class="col-12 col-sm-6 d-flex align-items-center justify-content-center visionImg h-auto">
         <div class="w-100 text-center">
           <img
             src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_811,h_630,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg"
@@ -200,173 +201,186 @@
 
 
 
-<section class="services text-dark">
-  <div class="container-fluid px-0">
+  <section class="services text-dark">
+    <div class="container-fluid px-0">
 
-    <!-- Row 1 -->
-    <div class="row align-items-start mb-4 p-5 mt-5 servicesMarginB">
-      <div class="col-12 col-md-4 bg-white text-dark px-5 py-0 h-auto d-flex flex-column gap-3 
+      <!-- Row 1 -->
+      <div class="row align-items-start mb-4 p-0 p-lg-5 mt-5 servicesMarginB">
+        <div class="col-12 col-md-4 bg-white text-dark px-lg-5 py-0 h-auto d-flex flex-column gap-3 
          align-content-center align-content-md-start justify-content-center justify-content-md-start 
-         marginservises mx-md-0 border-start border-1 border-dark">
+         marginservises mx-lg-0 border-start border-1 border-dark">
 
-        <p class="vision-text mb-3 py-0 text-dark">SERVICES</p>
+          <p class="vision-text mb-3 py-0 text-dark">SERVICES</p>
 
-        <!-- h3 with overlapping border -->
-        <h3 class="servicetext text-dark border-start border-5 border-black visionTextMove">
-          We Deliver Exceptional Products and Services Around the World
-        </h3>
+          <!-- h3 with overlapping border -->
+          <h3 class="servicetext text-dark border-start border-2 border-black visionTextMove">
+            We Deliver Exceptional Products and Services Around the World
+          </h3>
+        </div>
       </div>
-    </div>
 
-    <!-- Row 2: Autonomous Driving -->
-    <div class="row align-items-start marginbellow">
-      <div class="service-box-light col-md-6 col-12 h-auto d-flex flex-column gap-3 align-content-center justify-content-center msgrid" style="width:24rem;">
-        <div class="h1 w-100">
-          <h3 class="text-black fontHeading">AUTONOMOUS DRIVING</h3>
-        </div>
-        <div class="w-100">
-          <p class="text-black mb-3 fontp">
-            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-            Text” or double click me to add your own content and make changes to the font.
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-start fontp">
-          <div class="d-flex">
-            <a href="https://www.wix.com/demone2/autono/technology"
-              class="btn btn-outline-dark btn-md rounded-start-2 rounded-end-0">
-              Read More
-            </a>
-            <div class="arrow-box rounded-end-2" style="height:inherit; color:#000;">&rarr;</div>
+      <!-- Row 2: Autonomous Driving -->
+      <div class="row align-items-start marginbellow marginleft rowWidth ">
+        <div
+          class="service-box-light col-md-6 col-12 h-auto d-flex flex-column gap-4 align-content-center justify-content-center msgrid h-auto"
+          style="width:24rem;">
+          <div class="h1 w-100">
+            <h3 class="text-black fontHeading">AUTONOMOUS DRIVING</h3>
           </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-12">
-        <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
-          <img src="https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_676,h_510,al_l,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg"
-               class="img-fluid img1" alt="Responsive image">
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 3: Real-Time Information -->
-    <div class="row align-items-start marginbellow">
-      <div class="col-md-6 col-12">
-        <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
-          <img src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_676,h_510,al_r,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg"
-               class="img-fluid img2" alt="Responsive image">
-        </div>
-      </div>
-      <div class="service-box-light col-md-6 col-12 h-auto d-flex flex-column gap-3 align-content-center justify-content-center mx-auto" style="width:24rem;">
-        <div class="h1 w-100">
-          <h3 class="text-black fontHeading">REAL-TIME INFORMATION</h3>
-        </div>
-        <div class="w-100">
-          <p class="text-black mb-3 fontp">
-            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-            Text” or double click me to add your own content and make changes to the font.
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-start fontp">
-          <div class="d-flex">
-            <a href="https://www.wix.com/demone2/autono/technology"
-              class="btn btn-outline-dark btn-md rounded-start-2 rounded-end-0">
-              Read More
-            </a>
-            <div class="arrow-box rounded-end-2" style="height:inherit; color:#000;">&rarr;</div>
+          <div class="w-100">
+            <p class="text-black mb-3 fontp">
+              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+              click me to add your own content and make changes to the font. I’m a great place for you to tell a story
+              and let your users know a little more about you.
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 4: Perception Enabled -->
-    <div class="row align-items-start marginbellow">
-      <div class="service-box-light col-md-6 col-12 h-auto d-flex flex-column gap-3 align-content-center justify-content-center msgrid" style="width:24rem;">
-        <div class="h1 w-100">
-          <h3 class="text-black fontHeading">PERCEPTION ENABLED</h3>
-        </div>
-        <div class="w-100">
-          <p class="text-black mb-3 fontp">
-            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-            Text” or double click me to add your own content and make changes to the font.
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-start fontp">
-          <div class="d-flex">
-            <a href="https://www.wix.com/demone2/autono/technology"
-              class="btn btn-outline-dark btn-md rounded-start-2 rounded-end-0">
-              Read More
-            </a>
-            <div class="arrow-box rounded-end-2" style="height:inherit; color:#000;">&rarr;</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-12">
-        <div class="service-ambient h-100 d-flex align-items-center justify-content-center">
-          <img src="https://static.wixstatic.com/media/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg/v1/fill/w_676,h_510,al_l,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg"
-               class="img-fluid img3" alt="Responsive image">
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-  <section class="why-autono-section">
-    <div class="container-fluid container-md">
-      <div class="row align-items-center">
-        <!-- Left column: content box -->
-        <div class="col-12 col-lg-5 ">
-          <div
-            class="service-box-black bg-black text-white px-5 py-5 h-auto d-flex flex-column gap-3 align-content-center justify-content-center mx-md-auto rounded-4 box-width">
-
-            <div class="border1 whyAutonPadding border-start border-white py-0 px-5">
-              <!-- Heading -->
-              <p class="vision-text mb-3 ps-0 pb-4">WHY AUTONO</p>
-
-              <!-- h3 wrapper div gets the 5px border -->
-              <div class="h1 border-start border-2 border-white ml-n50 py-4">
-                <h3 class="heading-style2">
-                  A different approach, using a new method of manufacturing.
-                </h3>
-              </div>
-
-              <!-- Content below -->
-              <div>
-                <div class="w-100">
-                  <p class="text-white mb-3 fontp py-md-4 para-width">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-                    Text” or double click me to add your own content and make changes to the font. I’m a great
-                    place for you to tell a story and let your users know a little more about you.
-                  </p>
-                </div>
-
-                <div class="d-flex">
-                  <a href="https://www.wix.com/demone2/autono/technology"
-                    class="btn btn-md rounded-start-2 rounded-end-0 bg-black text-white border border-white btn-dark">
-                    Read More
-                  </a>
-                  <div
-                    class="d-flex align-items-center justify-content-center rounded-end-2 border border-white bg-black text-white px-3">
-                    &rarr;
-                  </div>
-                </div>
-              </div>
+          <div class="d-flex flex-column align-items-start fontp">
+            <div class="d-flex">
+              <a href="https://www.wix.com/demone2/autono/technology"
+                class="btn btn-outline-dark btn-md rounded-start-2 rounded-end-0">
+                Read More
+              </a>
+              <div class="arrow-box rounded-end-2" style="height:inherit; color:#000;">&rarr;</div>
             </div>
           </div>
+        </div>
+        <div class="col-md-6 col-12 msgrid">
+          <div class="service-ambient h-100 d-flex align-items-center justify-content-center ">
+            <img
+              src="https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_676,h_510,al_l,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg"
+              class="img-fluid img1 magesize380" alt="Responsive image">
+          </div>
+        </div>
+      </div>
 
+
+      <!-- Row 3: Real-Time Information -->
+      <div class="row align-items-start marginbellow rowWidth">
+        <div class="col-md-6 col-12 msgrid">
+          <div class="service-ambient h-100 d-flex align-items-center justify-content-center msgrid ">
+            <img
+              src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_676,h_510,al_r,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg"
+              class="img-fluid img2 magesize380" alt="Responsive image">
+          </div>
+        </div>
+        <div
+          class="service-box-light col-md-6 col-12 h-auto d-flex flex-column gap-3 align-content-center justify-content-center mx-auto msgrid"
+          style="width:24rem;">
+          <div class="h1 w-100">
+            <h3 class="text-black fontHeading">REAL-TIME INFORMATION</h3>
+          </div>
+          <div class="w-100">
+            <p class="text-black mb-3 fontp">
+              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+              click me to add your own content and make changes to the font. I’m a great place for you to tell a story
+              and let your users know a little more about you.
+            </p>
+          </div>
+          <div class="d-flex flex-column align-items-start fontp">
+            <div class="d-flex">
+              <a href="https://www.wix.com/demone2/autono/technology"
+                class="btn btn-outline-dark btn-md rounded-start-2 rounded-end-0">
+                Read More
+              </a>
+              <div class="arrow-box rounded-end-2" style="height:inherit; color:#000;">&rarr;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4: Perception Enabled -->
+      <div class="row align-items-start marginbellow marginleft rowWidth">
+        <div
+          class="service-box-light col-md-6 col-12 h-auto d-flex flex-column gap-3 align-content-center justify-content-center msgrid"
+          style="width:24rem;">
+          <div class="h1 w-100">
+            <h3 class="text-black fontHeading">PERCEPTION ENABLED</h3>
+          </div>
+          <div class="w-100">
+            <p class="text-black mb-3 fontp">
+              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+              click me to add your own content and make changes to the font. I’m a great place for you to tell a story
+              and let your users know a little more about you.
+            </p>
+          </div>
+          <div class="d-flex flex-column align-items-start fontp">
+            <div class="d-flex">
+              <a href="https://www.wix.com/demone2/autono/technology"
+                class="btn btn-outline-dark btn-md rounded-start-2 rounded-end-0">
+                Read More
+              </a>
+              <div class="arrow-box rounded-end-2" style="height:inherit; color:#000;">&rarr;</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="service-ambient h-100 d-flex align-items-center justify-content-center msgrid ">
+            <img
+              src="https://static.wixstatic.com/media/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg/v1/fill/w_676,h_510,al_l,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg"
+              class="img-fluid img3 magesize380" alt="Responsive image">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- my autono section -->
+  <section class="why-autono-section d-flex align-items-center py-5">
+    <div class="container">
+      <div class="row p-2">
+
+        <div class="col-12 col-md-8 col-lg-5 py-5 m-2">
+          <div class="autono-card bg-black text-white p-4 p-md-5 rounded-4 shadow-lg">
+
+
+            <div
+              class="border-start border-2 border-white ps-5 ps-md-5 py-lg-0 d-flex flex-column align-items-start gap-lg-4 gap-2 why-autono-padding ">
+
+
+              <p class="vision-labelWhy text-uppercase mb-4">Why Autono</p>
+
+
+              <h2 class="main-headingWhy mb-4 fw-normal">
+                A different approach, using a new method of manufacturing.
+              </h2>
+
+
+
+
+              <!-- Description -->
+              <p class="description-textWhy mb-5">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+                Text” or double click me to add your own content and make changes to the font. I’m a great
+                place for you to tell a story and let your users know a little more about you.
+              </p>
+
+              <!-- Button Group -->
+              <div class="d-flex ">
+                <a href="https://www.wix.com/demone2/autono/technology"
+                  class="btn btn-custom rounded-0 rounded-start-2 px-4 py-2 text-decoration-none">
+                  Read More
+                </a>
+                <div
+                  class="btn-custom rounded-0 rounded-end-2 px-3 py-2 d-flex align-items-center justify-content-center border-start-0">
+                  <span>&rarr;</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
-        <!-- Right column: image -->
-        <div class="col-0 col-md-6">
-          <!-- Empty for balance or add media -->
+        <!-- Spacer/Image Column -->
+        <div class="col-md-4 col-lg-7">
+          <!-- empty decorative image removed -->
         </div>
       </div>
     </div>
@@ -400,7 +414,7 @@
             <!-- Stat 1 -->
             <div class="mx-auto text-start stat-box">
               <div class="stat-value">
-                <span class="stat-highlight">2</span>
+                <span class="stat-highlight ">2</span>
                 <span>00</span>
               </div>
               <div class="stat-label">EMPLOYEES</div>
@@ -438,77 +452,88 @@
   </section>
 
 
-  <!-- INDUSTRY / OUR PARTNERS SECTION -->
+
+  <!-- INDUSTRY PARTNERS SECTION -->
   <section class="industry-partners py-5 text-white bg-black">
-    <div class="container-fluid">
-      <div class="row align-items-start flex-column flex-lg-row">
+    <div class="container">
 
-        <!-- Left col-md-6 col-12: text content -->
-        <div class="col-12 col-lg-6 ">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0 ps-4">
+
+          <!-- Content Wrapper with responsive border -->
           <div
-            class="service-box-black bg-black text-white h-auto d-flex flex-column gap-3 justify-content-center rounded-5 box-width ps-md-7rem ps-6rem">
+            class="border-start border-2 border-white ps-3 ps-md-5  py-4 text-start d-flex flex-column align-items-start gap-3">
 
-            <div class="border1 px-5 py-0 border-start border-1 border-white">
-              <!-- Heading -->
-              <p class="vision-text mb-3 px-4 pb-4 ps-3">INDUSTRY</p>
+            <!-- Label -->
+            <p class="mb-4 text-uppercase">INDUSTRY</p>
 
-              <!-- h3 wrapper div gets the 5px border -->
-              <div class="h1 w-100 border-start border-5 border-white ml-n50 mb-md-5">
-                <h3 class="heading-style  ps-md-7rem">
-                  Our <br> Partners
-                </h3>
-              </div>
+            <!-- Heading -->
+            <h2 class="display-2 fw-normal text-white applayBorder" style="font-family: 'Montserrat', sans-serif;">
+              Our <br> Partners
+            </h2>
 
-              <!-- Content below -->
-              <div>
-                <div class="" style="width: 350px;">
-                  <p class="text-white mb-3 fontp p-md-4 pt-md-4 pb-md-0">
-                    Click here to add your own content and customize the text. This is a great place to tell a story
-                    about your company and let your users know a little more about the company's history, the team's
-                    background, or any other information you'd like to share. Just click "Edit Text" to get started.
-                  </p>
-                </div>
-              </div>
+            <!-- Paragraph -->
+            <div class="description-max-width">
+              <p class="">
+                Click here to add your own content and customize the text. This is a great place to tell a story
+                about your company and let your users know a little more about the company's history, the team's
+                background, or any other information you'd like to share. Just click "Edit Text" to get started.
+              </p>
             </div>
+
           </div>
+
         </div>
 
-        <!-- Right col-md-6 col-12: partner logos grid -->
-        <div class="col-12 col-lg-6 text-white bg-black align-self-lg-center">
-          <div class="row text-center ">
+        <!-- Right Column: Partner Logos Grid -->
+        <div class="col-12 col-lg-6 ">
+          <div class="row text-center row_custom">
             <!-- Partner 1 -->
-            <div class="col-lg-6 col-12 mb-md-5">
+            <div class="col-6  logos p-4">
+
               <img
                 src="https://static.wixstatic.com/media/c837a6_a8508672733a4bb7ba100662952d4f6f~mv2.png/v1/fill/w_140,h_140,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/General_Transport.png"
-                alt="General Transport" class="img-fluid mb-2 logo-140 object-contain">
-              <p class="text-uppercase partner-label">General Transport</p>
+                alt="General Transport" class="mb-3 ">
+              <p class="text-uppercase partner-label mb-0">General Transport</p>
+
             </div>
             <!-- Partner 2 -->
-            <div class="col-lg-6 col-12 mt-md-4">
+            <div class="col-6  logos p-4">
+
               <img
                 src="https://static.wixstatic.com/media/c837a6_24669e1d20cd4f079fd2ea5e253c99b8~mv2.png/v1/fill/w_88,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IDI_Software.png"
-                alt="IDI Software" class="img-fluid mb-5 mt-2 logo-64 object-contain">
-              <p class="text-uppercase partner-label">IDI Software</p>
+                alt="IDI Software" class=" mb-3 ">
+              <p class="text-uppercase partner-label mb-0">IDI Software</p>
+
             </div>
             <!-- Partner 3 -->
-            <div class="col-lg-6 col-12 mt-md-5">
+            <div class="col-6 logos p-4">
+
               <img
                 src="https://static.wixstatic.com/media/c837a6_db1c6e9c1b95497f81465ccd218fa048~mv2.png/v1/fill/w_88,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Imogen_Cars.png"
-                alt="Imogen Cars" class="img-fluid mb-4 logo-80 object-contain">
-              <p class="text-uppercase partner-label">Imogen Cars</p>
+                alt="Imogen Cars" class=" mb-3 ">
+              <p class="text-uppercase partner-label mb-0">Imogen Cars</p>
+
             </div>
             <!-- Partner 4 -->
-            <div class="col-lg-6 col-12 mt-md-5">
+            <div class="col-6 logos p-4">
+
               <img
                 src="https://static.wixstatic.com/media/c837a6_81bc98e386764170adbb3e97cc7e1655~mv2.png/v1/fill/w_128,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tri-Nex%20.png"
-                alt="Tri-Nex" class="img-fluid mb-4 mt-3 logo-64 object-contain">
-              <p class="text-uppercase partner-label">Tri-Nex</p>
+                alt="Tri-Nex" class=" mb-3 ">
+              <p class="text-uppercase partner-label mb-0">Tri-Nex</p>
+
             </div>
           </div>
         </div>
+
       </div>
+
     </div>
   </section>
+
+
 
 
 
@@ -604,9 +629,9 @@
             </style>
 
             <!-- Carousel inner -->
-            <div class="carousel-inner rounded-4">
+            <div class="carousel-inner rounded-4 ">
               <!-- Slide 1 -->
-                <div class="carousel-item active bg-black text-white">
+              <div class="carousel-item active bg-black text-white">
                 <div class="d-flex flex-column gap-5 p-4">
                   <h5 class=" mb-2 ls-08em">Deep Learning Engineer</h5>
                   <p class="mb-2 ls-08em">San Francisco, CA</p>
@@ -628,10 +653,10 @@
                 </div>
               </div>
 
-              
+
 
               <!-- Slide 2 -->
-             <div class="carousel-item  bg-black text-white">
+              <div class="carousel-item  bg-black text-white">
                 <div class="d-flex flex-column gap-5 p-4">
                   <h5 class=" mb-2 ls-08em">Artificial Intelligence Researcher</h5>
                   <p class="mb-2 ls-08em">San Francisco, CA</p>
@@ -708,57 +733,50 @@
 
 
 
-
-
-
-
-
-
-
-
-
-  <footer class="footer-autono bg-light">
+  
+  <footer class=" bg-light">
     <div class="container-fluid ">
+      <div class="container">
 
-      <!-- Row 1: Links + Contact and Subscribe -->
-      <div class="row mt-7rem">
-        <!-- Left col-md-6 col-12: Links + Contact -->
-        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
-          <div class="d-flex flex-column flex-md-row align-items-start justify-content-center gap-5rem">
 
-            <!-- Links -->
-            <div class="d-flex flex-column gap-3rem">
-              <h5 class="fw-bold mb-3">AUTONO</h5>
-              <div><a href="https://www.wix.com/demone2/autono/technology" class="footer-link fw-lighter">Technology</a>
+
+        <!-- Row 1: Links + Contact and Subscribe -->
+        <div class="row ">
+          <!-- Left col-md-6 col-12: Links + Contact -->
+          <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
+            <div class="d-flex flex-column flex-md-row align-items-start justify-content-center gap-5rem">
+
+              <!-- Links -->
+              <div class="d-flex flex-column gap-3rem">
+                <h5 class="fw-bold mb-3">AUTONO</h5>
+                <div><a href="https://www.wix.com/demone2/autono/technology" class="footer-link ">Technology</a>
+                </div>
+                <div><a href="https://www.wix.com/demone2/autono/about" class="footer-link ">About</a></div>
+                <div><a href="https://www.wix.com/demone2/autono/careers" class="footer-link ">Careers</a></div>
               </div>
-              <div><a href="https://www.wix.com/demone2/autono/about" class="footer-link fw-lighter">About</a></div>
-              <div><a href="https://www.wix.com/demone2/autono/careers" class="footer-link fw-lighter">Careers</a></div>
-            </div>
 
-            <!-- Contact -->
-            <div class="d-flex flex-column gap-3rem mt-90px">
-              <div>Tel: 123-456-7890</div>
-              <div>Email: <a href="mailto:info@mysite.com" class="footer-link fw-lighter">info@mysite.com</a></div>
-              <div>500 Terry Francine St<br>San Francisco, CA 94158</div>
-            </div>
+              <!-- Contact -->
+              <div class="d-flex flex-column gap-3rem ">
+                <div>Tel: 123-456-7890</div>
+                <div class="text-black">Email: <a href="mailto:info@mysite.com" class="text-black">info@mysite.com</a></div>
+                <div>500 Terry Francine St<br>San Francisco, CA 94158</div>
+              </div>
 
+            </div>
           </div>
-        </div>
 
-        <!-- Right col-md-6 col-12: Subscribe form -->
-        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center align-items-center">
-          <div class="d-flex flex-column gap-3 w-100 subscribe-box">
+          <!-- Right col-md-6 col-12: Subscribe form -->
+          <div class="col-12 col-md-6 ">
             <!-- Title -->
-            <h5 class="mb-2 subscribe fw-lighter">SUBSCRIBE</h5>
+            <h5 class=" ">SUBSCRIBE</h5>
             <!-- Description -->
-            <p class="mb-3">Sign up to receive Autono news and updates.</p>
+            <p class="">Sign up to receive Autono news and updates.</p>
             <!-- Form -->
             <form class="d-flex flex-column gap-3">
-              <label for="subscribeEmail" class="form-label mb-0">Email*</label>
+              <label for="subscribeEmail" class="">Email*</label>
               <div class="d-flex flex-row gap-2 align-items-end">
-                <input type="email" id="subscribeEmail" class="form-control footer-input border-1 border-black"
-                  required>
-                <button type="submit" class="btn bg-black text-white btn-dark fw-semibold px-4">Subscribe</button>
+                <input type="email" id="subscribeEmail" class="" required>
+                <button type="submit" class="btn bg-black text-white btn-dark px-4">Subscribe</button>
               </div>
               <div class="form-check">
                 <input class="form-check-input border border-1 border-black" type="checkbox" id="subscribeConsent"
@@ -772,28 +790,34 @@
         </div>
       </div>
 
+
+
+      <!-- Divider -->
+
+
+      <!-- Row 2: Copyright + Icons -->
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5   icons text-black">
+          © 2035 by Autono. Powered and secured by
+          <a href="https://wix.com/?utm_campaign=vir_created_with" class="footer-link text-decoration-underline">Wix</a>
+        </div>
+        <div class="col-12 col-md-5 d-flex justify-content-md-end align-items-center mt-3 m-md-4 p-md-3">
+          <a href="#" class="footer-icon me-5"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="footer-icon me-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer-icon me-5"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
     </div>
-
-    <!-- Divider -->
-
-
-    <!-- Row 2: Copyright + Icons -->
-    <div class="row align-items-center">
-      <div class="col-12 col-md-5   icons text-black">
-        © 2035 by Autono. Powered and secured by
-        <a href="https://wix.com/?utm_campaign=vir_created_with" class="footer-link text-decoration-underline">Wix</a>
-      </div>
-      <div class="col-12 col-md-5 d-flex justify-content-md-end align-items-center mt-3 m-md-4 p-md-3">
-        <a href="#" class="footer-icon me-5"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="footer-icon me-5"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="footer-icon me-5"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
-      </div>
     </div>
   </footer>
 
-  <!-- Bootstrap CSS & Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+
+  <!-- Bootstrap Icons (duplicate Bootstrap CSS removed) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 

@@ -1,28 +1,33 @@
 
   /* Base footer typography */
-  .footer-autono {
+  footer{
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: #000;
     font-size: clamp(14px, 1.2vw, 16px);
     line-height: clamp(18px, 1.5vw, 19px);
+    letter-spacing: 1px;
     
   }
-  .footer-autono .container-fluid{
-    padding-top: 80px;
-    padding-bottom: 15px;
-  }
 
-  /* Company logo (AUTONO) */
-  .footer-autono h5:first-child {
-    letter-spacing: 5px;
-    font-size: clamp(16px, 1.5vw, 18px);
-  }
+footer .container{
+  padding: 100px 0;
+}
 
-  .subscribe{
-    letter-spacing: 3px !important;
-    font-weight: 100;
-  }
+footer .head-text{
+  letter-spacing: 10px;
+}
+
+footer .first-row{
+  /* padding-left: 200px !important; */
+  
+}
+
+
+
+
+
+
 
 
 
@@ -68,4 +73,101 @@
 .icons{
   margin-left: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer-autono bg-light">
+    <div class="container-fluid ">
+
+      <!-- Row 1: Links + Contact and Subscribe -->
+      <div class="row mt-7rem">
+        <!-- Left col-md-6 col-12: Links + Contact -->
+        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
+          <div class="d-flex flex-column flex-md-row align-items-start justify-content-center gap-5rem">
+
+            <!-- Links -->
+            <div class="d-flex flex-column gap-3rem">
+              <h5 class="fw-bold mb-3">AUTONO</h5>
+              <div><a href="https://www.wix.com/demone2/autono/technology" class="footer-link fw-lighter">Technology</a>
+              </div>
+              <div><a href="https://www.wix.com/demone2/autono/about" class="footer-link fw-lighter">About</a></div>
+              <div><a href="https://www.wix.com/demone2/autono/careers" class="footer-link fw-lighter">Careers</a></div>
+            </div>
+
+            <!-- Contact -->
+            <div class="d-flex flex-column gap-3rem mt-90px">
+              <div>Tel: 123-456-7890</div>
+              <div>Email: <a href="mailto:info@mysite.com" class="footer-link fw-lighter">info@mysite.com</a></div>
+              <div>500 Terry Francine St<br>San Francisco, CA 94158</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right col-md-6 col-12: Subscribe form -->
+        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+          <div class="d-flex flex-column gap-3 w-100 subscribe-box">
+            <!-- Title -->
+            <h5 class="mb-2 subscribe fw-lighter">SUBSCRIBE</h5>
+            <!-- Description -->
+            <p class="mb-3">Sign up to receive Autono news and updates.</p>
+            <!-- Form -->
+            <form class="d-flex flex-column gap-3">
+              <label for="subscribeEmail" class="form-label mb-0">Email*</label>
+              <div class="d-flex flex-row gap-2 align-items-end">
+                <input type="email" id="subscribeEmail" class="form-control footer-input border-1 border-black"
+                  required>
+                <button type="submit" class="btn bg-black text-white btn-dark fw-semibold px-4">Subscribe</button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input border border-1 border-black" type="checkbox" id="subscribeConsent"
+                  required>
+                <label class="form-check-label" for="subscribeConsent">
+                  Yes, subscribe me to your newsletter.*
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+
+
+    <!-- Row 2: Copyright + Icons -->
+    <div class="row align-items-center">
+      <div class="col-12 col-md-5   icons text-black">
+        © 2035 by Autono. Powered and secured by
+        <a href="https://wix.com/?utm_campaign=vir_created_with" class="footer-link text-decoration-underline">Wix</a>
+      </div>
+      <div class="col-12 col-md-5 d-flex justify-content-md-end align-items-center mt-3 m-md-4 p-md-3">
+        <a href="#" class="footer-icon me-5"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="footer-icon me-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="footer-icon me-5"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
 

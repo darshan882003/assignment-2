@@ -9,9 +9,10 @@
 
 /* Paragraph text */
 .para-style {
-  font-size: clamp(14px, 2vw, 16px);
-  line-height: clamp(20px, 2.5vw, 29px);
+  font-size: 16px;
+  line-height: 29px;
   color: #fff;
+  width: 350px;
 }
 
 /* Responsive width for paragraph wrapper */
@@ -28,7 +29,231 @@
 }
 
 .marginvision{
+  margin-left: 3rem;
+  padding-left: 3.2rem;
+}
+.marginservises {
   margin-left: 7rem;
+}
+
+.marginservises{
+  width: 200px;
+}
+
+. marginservises {
+  margin-left: 70rem !important;
+}
+
+
+.servicesMarginB{
+  margin-bottom: 500px;
+}
+
+
+
+
+
+.service-box-dark {
+  border-left: 1px solid #ffffff80;
+  
+}
+
+.service-box-dark .h1 {
+  
+  margin-left: -50px;
+  
+  min-width: 22rem;
+}
+
+
+.marginservises {
+  margin-left: 8rem !important;
+}
+
+.vision-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  font-size: clamp(12px, 2vw, 14px);
+  line-height: clamp(16px, 2.5vw, 20px);
+  letter-spacing: 2px;
+}
+
+.heading-style {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  font-size: clamp(18px, 3vw, 24px);
+  line-height: clamp(28px, 5vw, 43px);
+  min-width: 22rem;
+  letter-spacing: 1px;
+  padding-left: 6rem;
+}
+
+.servicetext{
+ 
+margin-left: -3rem;
+
+width: 318px;
+  padding-left: 2rem;
+ font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  
+  font-size: 24px;
+  line-height: 43px;
+  
+}
+
+.topcover{
+  position: relative;
+  width: 5%;
+  height: 15px;
+  background-color: rgb(0, 0, 0);
+  top: 10;
+  left: 150px;
+  z-index: 10;
+}
+
+.bottomcover{
+  position: relative;
+  width: 5%;
+  height: 55px;
+  background-color: rgb(0, 0, 0);
+  top: 530px;
+  right: 350px;
+  z-index: 10;
+}
+
+
+.para-style {
+  font-size: clamp(8px, 1.5vw, 16px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 1px;
+  color: white;
+
+}
+
+.pwidth {
+  width: clamp(280px, 100vw, 360px);
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+  .bottom-img{
+  position: relative;
+  left: 50%;
+ z-index: -1;
+}
+
+.servicesMT img{
+  position:relative;
+  left: 100px;
+  top: 50px;
+transform: scale(1)
+
+
+}
+
+
+
+@media (min-width: 992px) {
+  .para-style {
+    font-size: 16px;
+  }
+
+    .bottom-img{
+  position: relative;
+  left: 50%;
+  bottom: 150px;
+  z-index: 5;
+}
+
+.servicesMT img{
+ 
+  margin-left: 40px;
+transform: scale(1.3)
+
+
+
+
+}
+
+.servicesMT {
+  padding-left: 4rem;
+ margin-top: -12rem;
+ padding-bottom: 8rem;
+
+ 
+}
+
+.visionImg{
+transform: translateX(100px);
+position: relative;
+bottom: 120px;
+}
+
+
+.marginvision {
+    width: 20rem;
+  }
+
+} /* ✅ Mobile fix for padding */
+@media (max-width: 780px) {
+
+
+
+  .marginvision {
+    width: 20rem;
+  }
+  .heading-style {
+  color: #fff;
+  font-size:32px;
+  line-height: clamp(24px, 3vw, 32px);
+  text-align: start;
+}
+
+/* Paragraph text */
+.para-style {
+  font-size: 200px;
+  line-height: 29px;
+  color: #fff;
+  width: 350px;
+}
+
+.marginvision {
+  margin-left: 10rem;
+  padding-left: 30rem;
+}
+
+.addingBoder {
+  border-left: 1px solid #00000080;
+  border-bottom: 1px solid #00000080;
+margin-left: 300px;
+}
+
+/* Responsive width for paragraph wrapper */
+.pwidth {
+  width: clamp(260px, 80vw, 360px);
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.visionTextMove{
+  position: relative;
+  top: 7px;
+}
+
+.marginvision{
+  position: relative;
+  bottom: 200px;
+  margin-left: 1rem;
+  padding-left: 3.2rem;
 }
 .marginservises {
   margin-left: 7rem;
@@ -65,6 +290,12 @@
   letter-spacing: 2px;
 }
 
+.marginservises {
+  margin-left: 5rem !important;
+  
+}
+  
+
 .heading-style {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -79,7 +310,7 @@
 
 .servicetext{
  
-  margin-left:  -50px;
+  margin-left:  50px;
 
 
   padding-left: 2rem;
@@ -92,6 +323,25 @@
   
 }
 
+.topcover{
+  position: relative;
+  width: 5%;
+  height: 25px;
+  background-color: rgb(0, 0, 0);
+  top: 210px;
+  left: 25px;
+  z-index: 10;
+}
+
+.bottomcover{
+  position: relative;
+  width: 5%;
+  height: 55px;
+  background-color: rgb(0, 0, 0);
+  top: 530px;
+  right: 350px;
+  z-index: 10;
+}
 
 
 .para-style {
@@ -118,76 +368,261 @@
 
 .servicesMT img{
   position:relative;
-  left: 200px;
-  top: 50px;
-transform: scale(1)
-
-
-}
-
-
-
-@media (min-width: 992px) {
-  .para-style {
-    font-size: 16px;
-  }
-
-    .bottom-img{
-  position: relative;
-  left: 50%;
-  bottom: 150px;
-  z-index: 5;
-}
-
-.servicesMT img{
- 
-  margin-left: 40px;
+  left: 100px;
+  top: -90px;
 transform: scale(1.5)
 
 
-
-
 }
 
-.servicesMT {
-  padding: 15rem;
- margin-top: -12rem;
-
- 
-}
-
-.visionImg{
-transform: translateX(10px);
-position: relative;
-bottom: 120px;
-}
-
-} /* ✅ Mobile fix for padding */
-@media (max-width: 767px) {
-  .services {
-    padding-left: 1rem; /* Reduce padding on mobile */
-  }
-  .servicesMT {
-    padding: 2rem; /* Prevent huge spacing on mobile */
-  }
-} /* ✅ Tablet adjustment */
-@media (min-width: 768px) and (max-width: 991px) {
-  .services {
-    padding-left: 2rem; /* Softer padding for tablets */
-  }
-  .servicesMT {
-    padding: 5rem;
-  }
 } /* Reduce padding on mobile for that row and column */
-@media (max-width: 767px) {
-  .services .row.p-5 {
-    padding: 1rem !important; /* shrink row padding */
-  }
-  .services .col-12.p-5 {
-    padding: 1rem !important; /* shrink column padding */
-  }
+
+.hero-content {
+  /* Width scales between 233px and 674px */
+  font-size: clamp(233px, 50vw, 674px);
+
+  /* Height scales between 200px and 235px */
  
 }
+
+@media (max-width: 992px) {
+  .service-box-light {
+    width: 100% !important;
+  }
+}
+.service-ambient img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.5);
+}
+
+@media (max-width: 780px) {
+  .service-ambient img {
+    transform: scale(1);
+  }
+}
+
+
+
+/* Tablet breakpoint (≤ 780px) */
+/* Tablet breakpoint (≤ 780px) */
+@media (max-width: 780px) {
+  .para-style {
+    font-size: 15px;
+    line-height: 27px; /* proportional to 15px */
+  }
+}
+
+
+/* Mobile breakpoint (≤ 380px) */
+@media (max-width: 380px) {
+
+
+ .text-white.para-style { font-size: 12px; }
+.service-box-dark.para-style { font-size: 14px; }
+.service-box-dark.para-style{width: 200px;}
+
+   .heading-style {
+  color: #fff;
+  font-size:32px;
+  line-height: clamp(24px, 3vw, 32px);
+  text-align: start;
+}
+.heading-style {
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+
+  height: 98px;
+  min-height: 98px;
+  max-height: 98px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32.4px;
+  color: #ffffff;
+  text-align: start;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Paragraph text */
+.para-style {
+  width: 236px;
+  min-width: 236px;
+  max-width: 236px;
+
+  height: 166px;
+  min-height: 166px;
+  max-height: 166px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: normal;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.marginvision {
+  margin-left: 10rem;
+  padding-left: 30rem;
+  padding-bottom: 5rem;
+}
+
+/* Responsive width for paragraph wrapper */
+.pwidth {
+  width: clamp(260px, 80vw, 360px);
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.visionTextMove{
+  position: relative;
+  top: 7px;
+}
+
+.marginvision{
+  position: relative;
+  bottom: 00px;
+  margin-left: 1rem;
+  padding-left: 3.2rem;
+}
+.marginservises {
+  margin-left: 7rem;
+}
+
+
+.servicesMarginB{
+  margin-bottom: 500px;
+}
+
+
+
+
+
+.service-box-dark {
+  border-left: 1px solid #ffffff80;
+  
+}
+
+.service-box-dark .h1 {
+  
+  margin-left: -50px;
+  
+  min-width: 12rem;
+}
+
+.vision-text1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.76px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  
+  padding: 0;
+}
+
+.heading-style {
+  
+ font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32.4px;
+  letter-spacing: normal;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  margin: 0;
+  padding-left: 3rem;
+  
+}
+
+.servicetext{
+ 
+  margin-left:  -50px;
+
+
+  padding-left: 2rem;
+ font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  
+  font-size: 24px;
+  line-height: 43px;
+  
+}
+
+.topcover{
+  position: relative;
+  width: 5%;
+  height: 350px;
+  background-color: rgb(0, 0, 0);
+  top: 730px;
+  
+  z-index: 10;
+}
+
+.bottomcover{
+  width: 500px;
+  position: relative;
+  height: 55px;
+  background-color: rgb(0, 0, 0);
+  top: 0px;
+ 
+  z-index: 10;
+}
+
+
+.para-style {
+  font-size: clamp(8px, 1.5vw, 16px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 1px;
+  color: white;
+
+}
+
+.pwidth {
+  width: clamp(280px, 100vw, 360px);
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+  .bottom-img{
+  position: relative;
+  left: 50%;
+ z-index: -1;
+}
+
+
+.servicesMT img{
+width: 320px;
+height: 332px;
+  position:relative;
+  left: 50px;
+  top: -50px;
+  
+transform: scale(1)
+
+
+
+} /* Reduce padding on mobile for that row and column */
+
 .hero-content {
   /* Width scales between 233px and 674px */
   font-size: clamp(233px, 50vw, 674px);
@@ -199,220 +634,7 @@ bottom: 120px;
 
 /* Tablet breakpoint (≤ 780px) */
 /* Tablet breakpoint (≤ 780px) */
-@media (max-width: 780px) {
-  .servicesMT {
-    padding: 3rem 1rem;
-    min-height: auto;
-  }
 
-  .marginvision,
-  .marginservises {
-    margin-left: 2rem;
-  }
-
-  .border-light,
-  .service-box-dark{
-    border: none !important;
-  }
-
-.text-white{
-  width: 700px;
-}
-
-  .service-box-dark {
-    width: 100% !important;
-    padding: 1rem;
-    border-left: none;
-    border-top: 1px solid #ffffff80;
-  }
-
-  .service-box-dark .h1 {
-    margin-left: 0;
-    min-width: auto;
-  }
-
-  .heading-style {
-    font-size: 20px;
-    line-height: 28px;
-    padding-left: 2rem;
-    min-width: auto;
-  }
-
-  .vision-text {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-  }
-
-  .para-style {
-    font-size: 14px;
-    line-height: 22px;
-    text-align: justify;
-  }
-
-  .visionImg {
-    margin-top: 2rem;
-    bottom: 0;
-    transform: none;
-  }
-
-  .servicesMT img {
-    left: 0;
-    top: 0;
-    transform: scale(1);
-    max-width: 90%;
-    height: auto;
-    margin-left: 250px;
-  }
-}
 
 /* Mobile breakpoint (≤ 380px) */
-@media (max-width: 380px) {
-  .servicesMT {
-    padding: 1.5rem 1rem;
-  }
-
-  .marginvision,
-  .marginservises {
-    margin-left: 0;
-  }
-
-  .service-box-dark {
-    width: 100% !important;
-    padding: 0.5rem;
-    border: none;
-  }
-
-  .heading-style {
-    font-size: 16px;
-    line-height: 22px;
-    padding-left: 0;
-    text-align: center;
-    width: 300px;
-    margin-left: 30px;
-  }
-
-  .vision-text {
-    font-size: 10px;
-    line-height: 14px;
-    letter-spacing: 1px;
-    text-align: center;
-  }
-
-  .para-style {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    width: 350px;
-  }
-
-  .visionImg {
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  .servicesMT img {
-    max-width: 100%;
-    height: auto;
-    left: 0;
-    top: 0;
-    transform: none;
-    margin-left: 0px;
-  }
-}
-
 /* Tablet breakpoint (≤ 780px) */
-@media (max-width: 780px) {
-  .services {
-    padding: 2rem 1rem; /* reduce section padding */
-  }
-
-  .servicesMarginB {
-    margin-bottom: 200px; /* shrink bottom spacing */
-  }
-
-  .marginservises {
-    margin-left: 1rem; /* reduce left margin */
-  }
-
-  .servicetext {
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 0;
-    padding-left: 1rem;
-    text-align: left;
-   
-  }
-
-.servicetext.text-dark.border-start.border-5.border-black.visionTextMove{
-  margin-left: 100px;
-}
-  .vision-text {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    margin-left: 270px;
-  }
-
-   
-   .vision-text1{
-    margin-left: 300px;
-   }
-
-  .row.p-5 {
-    padding: 2rem !important; /* shrink row padding */
-  }
-
-  .col-12.px-5 {
-    padding: 1rem !important; /* shrink column padding */
-  }
-}
-
-/* Mobile breakpoint (≤ 380px) */
-@media (max-width: 380px) {
-  .services {
-    padding: 1.5rem 1rem;
-  }
-
-  .vision-text1{
-    margin-left: 130px;
-   }
-
-
-  .servicesMarginB {
-    margin-bottom: 100px; /* further reduce spacing */
-  }
-
-  .marginservises {
-    margin-left: 0; /* remove margin */
-  }
-
-  .servicetext {
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 0;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .vision-text {
-    font-size: 10px;
-    line-height: 14px;
-    letter-spacing: 1px;
-    text-align: center;
-    margin-left: -50px;
-  }
-
-  .servicetext.text-dark.border-start.border-5.border-black.visionTextMove{
-  margin-left: -20px;
-  width: 350px;
-}
-
-  .row.p-5 {
-    padding: 1rem !important;
-  }
-
-  .col-12.px-5 {
-    padding: 0.5rem !important;
-  }
-}

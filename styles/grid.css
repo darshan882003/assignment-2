@@ -1,3 +1,5 @@
+/* ================= BASE / DESKTOP ================= */
+
 .vision-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -6,12 +8,16 @@
   letter-spacing: 2px;
 }
 
-.msgrid{
+.msgrid {
   margin-left: 4.5rem;
   margin-right: 10rem;
-  
 }
-.marginbellow{
+
+.marginleft {
+  margin-left: 8.7rem;
+}
+
+.marginbellow {
   margin-bottom: 10rem;
 }
 
@@ -26,21 +32,28 @@
 
 .fontHeading {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 100;
-  line-height: 3.75rem;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 1px;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  margin: 0;
+  padding: 0;
 }
 
- .fontp {
-  font-family: 'Montserrat', sans-serif;
+.fontp {
+  width: 330px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  color: rgb(200, 200, 200);
-
-  /* Desktop: exactly 16px */
-  font-size: clamp(14px, 2.5vw, 16px);
-
-  /* Desktop: exactly 29px */
-  line-height: clamp(20px, 4vw, 29px);
+  line-height: 28.8px;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  margin: 0;
+  padding: 0;
 }
 
 .arrow-box {
@@ -58,27 +71,13 @@
   height: 100%;
 }
 
-.services img{
-  scale: (1.9);
-}
-.services .img1{
-  
-
-  translate: 70px 0
-}
-
-.services .img3{
-  translate: 70px 0
-}
-
 .service-ambient {
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-/* Apply the scale */
 .service-ambient img {
-  transform: scale(1.5);
-  display: block; /* Helps with alignment */
+  transform: scale(1.2);
+  
 }
 
 .btn-dark:hover {
@@ -87,66 +86,15 @@
   border: 1px solid black !important;
 }
 
+/* ================= TABLET (≤ 780px) ================= */
 
-/* Tablet breakpoint (≤ 780px) */
 @media (max-width: 780px) {
-  /* Remove borders on headings */
-  .servicetext,
-  .services .border-start {
-    border: none !important;
-    padding-left: 0;
-    margin-left: 0;
-    text-align: center;
-  }
 
-  /* Force service boxes to full width */
-  .service-box-light,
-  .msgrid {
-    width: 100% !important;   /* override inline 24rem */
+  /* RESET DESKTOP OFFSETS (CRITICAL FIX) */
+    .msgrid,
+  .marginleft {
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
-
-  .marginbellow {
-    margin-bottom: 4rem;
-  }
-
-  /* Scale down heading and paragraph text */
-  .fontHeading {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    text-align: center;
-  }
-
-  .fontp {
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-  }
-
-  /* Images scale down */
-  .service-ambient img {
-    transform: scale(1.1);
-    max-width: 100%;   /* ensure image fits container */
-    height: auto;
-  }
-}
-
-
-/* Mobile breakpoint (≤ 380px) */
-@media (max-width: 380px) {
-  /* Remove borders completely */
-  .servicetext,
-  .services .border-start {
-    border: none !important;
-    padding-left: 0;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .msgrid {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .marginbellow {
@@ -154,21 +102,117 @@
   }
 
   .fontHeading {
-    font-size: 1.4rem;
-    line-height: 2rem;
-    text-align: center;
+   font-family: "Montserrat", sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 41.5px;
+  letter-spacing: normal;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  margin: 0;
+  padding: 0;
   }
 
   .fontp {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.6px;
+  letter-spacing: normal;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  margin: 0;
+  padding: 0;
   }
 
-  /* Images scale to fit */
+  .service-ambient img {
+    transform: scale(2);
+    max-width: 100%;
+    height: auto;
+  }
+
+  .rowWidth{
+    width: 250px;
+    
+  }
+
+  .msgrid{
+    margin-left: 8rem !important;
+  
+  }
+
+   .service-ambient img {
+    transform: scale(1.1);
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+/* ================= MOBILE (≤ 380px) ================= */
+
+@media (max-width: 380px) {
+
+  .msgrid,
+  .marginleft {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .marginbellow {
+    margin-bottom: 2rem;
+  }
+
+  .fontHeading {
+   font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 31.5px;
+  letter-spacing: normal;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  }
+
+  .fontp {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: normal;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  }
+
   .service-ambient img {
     transform: scale(1);
     max-width: 100%;
     height: auto;
   }
+
+  .rowWidth{
+    width: 250px;
+    
+  }
+
+  .msgrid{
+    margin-left: 3rem !important;
+  
+  }
+
+   .service-ambient img {
+    transform: scale(1.1);
+    max-width: 100%;
+    height: auto;
+  }
+
+ 
 }
